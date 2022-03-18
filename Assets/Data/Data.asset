@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6da2e65e745b408da3b104d455a9c971, type: 3}
+  m_Name: Data
+  m_EditorClassIdentifier: 
+  PlayerPrefab: {fileID: 6068857361351888168, guid: 4c3d4217747d56f40a731b9f7aeed92b, type: 3}
+  SceneObjectPrefab: {fileID: 1799520306558051980, guid: 5a063e864019155428b3996b52d61546, type: 3}
+  SceneObjectPositions:
+  - {x: -15, y: 0, z: 15}
+  - {x: -13, y: 0, z: 15}
+  - {x: -15, y: 0, z: 13}
+  - {x: -13, y: 0, z: 13}
+  - {x: 15, y: 0, z: 15}
+  - {x: 13, y: 0, z: 15}
+  - {x: 15, y: 0, z: 13}
+  - {x: 13, y: 0, z: 13}
+  - {x: -15, y: 0, z: -15}
+  - {x: -13, y: 0, z: -15}
+  - {x: -15, y: 0, z: -13}
+  - {x: -13, y: 0, z: -13}
+  - {x: 15, y: 0, z: -15}
+  - {x: 13, y: 0, z: -15}
+  - {x: 15, y: 0, z: -13}
+  - {x: 13, y: 0, z: -13}
+  CameraOffset: {x: 0, y: 15, z: -10}
+  GlobalGravitation: {x: 0, y: 0, z: 0}
+  SpawnTimer: 0
+  PlayerAddForce: {x: 0, y: 0, z: 0}
+  ClampVelocity: 0.2
