@@ -1,6 +1,7 @@
 using Core.Components.Common;
 using Core.UnityComponents.MonoLinks.Base;
 using Infrastructure;
+using Infrastructure.Factory;
 using Leopotam.Ecs;
 using UnityEngine;
 

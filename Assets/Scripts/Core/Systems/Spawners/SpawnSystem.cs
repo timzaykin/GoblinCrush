@@ -2,6 +2,7 @@ using Core.Components.Common;
 using Core.Data;
 using Core.UnityComponents.Factories;
 using Infrastructure;
+using Infrastructure.Factory;
 using Leopotam.Ecs;
 
 namespace Core.Systems.Spawners

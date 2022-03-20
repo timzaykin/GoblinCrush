@@ -2,7 +2,7 @@
 
 namespace Services.Input
 {
-    public class StandaloneInput:IInputSrevice
+    public class StandaloneInput:IInputService
     {
         protected const string Horizontal = "Horizontal";
         protected const string Vertical = "Vertical";

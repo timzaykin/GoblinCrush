@@ -8,6 +8,8 @@ using Core.Systems.InputSystems;
 using Core.Systems.MoveSystems;
 using Core.Systems.Spawners;
 using Infrastructure;
+using Infrastructure.Factory;
+using Infrastructure.Services;
 using Leopotam.Ecs;
 using Leopotam.Ecs.Ui.Systems;
 using Services;
@@ -28,7 +30,7 @@ namespace Core
 
 		private LevelData _levelData;
 	
-		private IInputSrevice _inputService;
+		private IInputService _inputService;
 		private IGameFactory _gameFactory;
 		private PauseService _pauseService;
 		private ScoreService _scoreService;
@@ -51,7 +53,7 @@ namespace Core
 
 			_levelData = levelData;
 			_gameFactory = gameFactory;
-			_inputService = Game.InputSrevice;
+			_inputService = AllServices.Container.Single<IInputService>();
 			
 			InitializedServices();
 			InitializeObserver();

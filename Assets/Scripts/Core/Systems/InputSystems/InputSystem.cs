@@ -9,7 +9,7 @@ namespace Core.Systems.InputSystems
 	{
 		private EcsWorld _world = null;
 		private EcsFilter<PlayerTag> _filter = null;
-		private IInputSrevice _inputService = null;
+		private IInputService _inputService = null;
 		
 		public void Run()
 		{

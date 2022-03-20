@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Services.Input
 {
-    public class MobileInputService : MonoBehaviour, IInputSrevice
+    public class MobileInputService : MonoBehaviour, IInputService
     {
         public delegate void OnSwipe(Vector3 direction, float distance);
 

@@ -1,25 +1,29 @@
 ﻿using CodeBase.Logic;
 using Core;
 using Core.Data;
+using Infrastructure.AssetManagement;
+using Infrastructure.Factory;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Infrastructure
+namespace Infrastructure.States
 {
     public class LoadLevelState : IPayloadedState<string>
     {
-        private const string PrefabsPlayer = "Prefabs/Player";
-        
         private readonly GameStateMachine _gameStateMachine;
         private readonly SceneLoader _sceneLoader;
         private readonly LoadingCurtain _curtain;
         private readonly IGameFactory _gameFactory;
 
-        public LoadLevelState(GameStateMachine gameStateMachine, SceneLoader sceneLoader, LoadingCurtain curtain)
+        public LoadLevelState(GameStateMachine gameStateMachine,
+            SceneLoader sceneLoader, 
+            LoadingCurtain curtain, 
+            IGameFactory gameFactory)
         {
             _gameStateMachine = gameStateMachine;
             _sceneLoader = sceneLoader;
             _curtain = curtain;
+            _gameFactory = gameFactory;
         }
 
         public void Enter(string sceneName)
@@ -44,7 +48,7 @@ namespace Infrastructure
         private LevelData LoadLevelData()
         {
             var levelData = new LevelData();
-            levelData.PlayerPrefabPath = PrefabsPlayer;
+            levelData.PlayerPrefabPath = AssetPath.PrefabsPlayer;
             levelData.StartPosition = Vector3.zero;
             return levelData;
         }
