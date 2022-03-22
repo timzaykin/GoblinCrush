@@ -5,26 +5,26 @@ using Services;
 
 namespace Core.Systems.UISystems
 {
-	public class UIGameProgressSystem : IEcsRunSystem
-	{
-		private const string Startgamebtn = "StartGameBtn";
+  public class UIGameProgressSystem : IEcsRunSystem
+  {
+    private const string Startgamebtn = "StartGameBtn";
+    private readonly EcsFilter<EcsUiClickEvent> _filter = null;
+    private readonly EcsFilter<GameProgress> _filterGameProgress = null;
 
-		private PauseService _pauseService;
-		private EcsFilter<EcsUiClickEvent> _filter = null;
-		private EcsFilter<GameProgress> _filterGameProgress = null;
+    private PauseService _pauseService;
 
-		public void Run()
-		{
-			foreach (int index in _filter)
-			{
-				EcsUiClickEvent click = _filter.Get1(index);
-				if (click.WidgetName.Equals(Startgamebtn))
-				{
-					ref GameProgress gameProgress = ref _filterGameProgress.Get1(0);
-					gameProgress.IsPause = false;
-					_pauseService.ResetPause();
-				}
-			}
-		}
-	}
+    public void Run()
+    {
+      foreach (var index in _filter)
+      {
+        var click = _filter.Get1(index);
+        if (click.WidgetName.Equals(Startgamebtn))
+        {
+          ref var gameProgress = ref _filterGameProgress.Get1(0);
+          gameProgress.IsPause = false;
+          _pauseService.ResetPause();
+        }
+      }
+    }
+  }
 }

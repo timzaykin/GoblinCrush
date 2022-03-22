@@ -2,8 +2,7 @@
 
 namespace Core.Components.Objects.Tags
 {
-    public struct WeaponTag: IEcsIgnoreInFilter
-    {
-        
-    }
+  public struct WeaponTag : IEcsIgnoreInFilter
+  {
+  }
 }

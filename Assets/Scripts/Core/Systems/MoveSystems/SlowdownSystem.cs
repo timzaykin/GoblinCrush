@@ -5,33 +5,31 @@ using UnityEngine;
 
 namespace Core.Systems.MoveSystems
 {
-    public class SlowdownSystem:IEcsRunSystem
+  public class SlowdownSystem : IEcsRunSystem
+  {
+    private readonly EcsFilter<CharacterLink, Position> _filter = null;
+    private readonly EcsFilter<InputDirection> _inputFilter = null;
+
+    private float frac;
+
+    public void Run()
     {
-        private EcsFilter<InputDirection> _inputFilter = null;
-        private EcsFilter<CharacterLink, Position> _filter = null;
+      if (_inputFilter.IsEmpty())
+      {
+        if (_filter.IsEmpty()) return;
 
-        private float frac;
-        
-        public void Run()
+        foreach (var index in _filter)
         {
-            if (_inputFilter.IsEmpty())
-            {
-                if(_filter.IsEmpty()) return;
-
-                foreach (var index in _filter)
-                {
-                    ref	var position = ref _filter.Get2(index);
-                    position.Value = Vector3.LerpUnclamped(position.Value, Vector3.zero, Mathf.Clamp(frac, 0f, 1f));
-                }
-
-                frac += Time.deltaTime/10;
-            }
-            else
-            {
-                frac = 0;
-            }
-
-
+          ref var position = ref _filter.Get2(index);
+          position.Value = Vector3.LerpUnclamped(position.Value, Vector3.zero, Mathf.Clamp(frac, 0f, 1f));
         }
+
+        frac += Time.deltaTime / 10;
+      }
+      else
+      {
+        frac = 0;
+      }
     }
+  }
 }

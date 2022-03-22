@@ -1,24 +1,24 @@
 using Core.Components.Common;
-using Core.Data;
+using Data;
 using Leopotam.Ecs;
 using UnityEngine;
 
 namespace Core.Systems.Spawners
 {
-	public class SpawnPlayer : IEcsInitSystem
-	{
-		private EcsWorld _world = null;
-		private LevelData _levelData;
-		
-		public void Init()
-		{
-			_world.NewEntity().Get<SpawnPrefab>() = new SpawnPrefab
-			{
-				PrefabPath = _levelData.PlayerPrefabPath,
-				Position = _levelData.StartPosition,
-				Rotation = Quaternion.identity,
-				Parent = null
-			};
-		}
-	}
+  public class SpawnPlayer : IEcsInitSystem
+  {
+    private LevelData _levelData;
+    private readonly EcsWorld _world = null;
+
+    public void Init()
+    {
+      _world.NewEntity().Get<SpawnPrefab>() = new SpawnPrefab
+      {
+        PrefabPath = _levelData.PlayerPrefabPath,
+        Position = _levelData.StartPosition.AsUnityVector(),
+        Rotation = Quaternion.identity,
+        Parent = null
+      };
+    }
+  }
 }

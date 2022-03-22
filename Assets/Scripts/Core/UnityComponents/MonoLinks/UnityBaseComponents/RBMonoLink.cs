@@ -4,20 +4,18 @@ using UnityEngine;
 
 namespace Core.UnityComponents.MonoLinks.UnityBaseComponents
 {
-    [RequireComponent(typeof(Rigidbody))]
-    public class RBMonoLink : MonoLink<RigidbodyLink>
-    {
+  [RequireComponent(typeof(Rigidbody))]
+  public class RBMonoLink : MonoLink<RigidbodyLink>
+  {
 #if UNITY_EDITOR
-        private void OnValidate()
+    private void OnValidate()
+    {
+      if (Value.Value == null)
+        Value = new RigidbodyLink
         {
-            if (Value.Value == null)
-            {
-                Value = new RigidbodyLink
-                {
-                    Value = GetComponent<Rigidbody>()
-                };
-            }
-        }
-#endif
+          Value = GetComponent<Rigidbody>()
+        };
     }
+#endif
+  }
 }

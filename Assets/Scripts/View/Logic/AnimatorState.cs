@@ -6,6 +6,6 @@ namespace View.Logic
     Idle,
     Attack,
     Walking,
-    Died,
+    Died
   }
 }

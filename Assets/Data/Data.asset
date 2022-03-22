@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6da2e65e745b408da3b104d455a9c971, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  PlayerPrefab: {fileID: 6068857361351888168, guid: 4c3d4217747d56f40a731b9f7aeed92b, type: 3}
-  SceneObjectPrefab: {fileID: 1799520306558051980, guid: 5a063e864019155428b3996b52d61546, type: 3}
+  SceneObjectPrefab: Prefabs/SceneObject
   SceneObjectPositions:
   - {x: -15, y: 0, z: 15}
   - {x: -13, y: 0, z: 15}

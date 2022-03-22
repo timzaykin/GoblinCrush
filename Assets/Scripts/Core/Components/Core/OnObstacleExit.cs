@@ -1,7 +1,7 @@
 namespace Core.Components.Core
 {
-	public struct OnObstacleExit
-	{
-		public int Score;
-	}
+  public struct OnObstacleExit
+  {
+    public int Score;
+  }
 }

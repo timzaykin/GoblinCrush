@@ -10,46 +10,50 @@ namespace View.Hero
     private static readonly int AttackHash = Animator.StringToHash("AttackNormal");
     private static readonly int HitHash = Animator.StringToHash("Hit");
     private static readonly int DieHash = Animator.StringToHash("Die");
+    private readonly int _attackStateHash = Animator.StringToHash("Attack Normal");
+    private readonly int _deathStateHash = Animator.StringToHash("Die");
+    private readonly int _idleStateFullHash = Animator.StringToHash("Base Layer.Idle");
 
     private readonly int _idleStateHash = Animator.StringToHash("Idle");
-    private readonly int _idleStateFullHash = Animator.StringToHash("Base Layer.Idle");
-    private readonly int _attackStateHash = Animator.StringToHash("Attack Normal");
     private readonly int _walkingStateHash = Animator.StringToHash("Run");
-    private readonly int _deathStateHash = Animator.StringToHash("Die");
-    
-    public event Action<AnimatorState> StateEntered;
-    public event Action<AnimatorState> StateExited;
-   
-    public AnimatorState State { get; private set; }
-    
+
     public Animator Animator;
     public CharacterController CharacterController;
 
-    private void Update()
-    {
-      Animator.SetFloat(MoveHash, CharacterController.velocity.magnitude, 0.1f, Time.deltaTime);
-    }
-
     public bool IsAttacking => State == AnimatorState.Attack;
-    
 
-    public void PlayHit() => Animator.SetTrigger(HitHash);
-    
-    public void PlayAttack() => Animator.SetTrigger(AttackHash);
+    public AnimatorState State { get; private set; }
 
-    public void PlayDeath() =>  Animator.SetTrigger(DieHash);
-
-    public void ResetToIdle() => Animator.Play(_idleStateHash, -1);
-    
     public void EnteredState(int stateHash)
     {
       State = StateFor(stateHash);
       StateEntered?.Invoke(State);
     }
 
-    public void ExitedState(int stateHash) =>
+    public void ExitedState(int stateHash) => 
       StateExited?.Invoke(StateFor(stateHash));
-    
+
+    public event Action<AnimatorState> StateEntered;
+    public event Action<AnimatorState> StateExited;
+
+    private void Update()
+    {
+      Animator.SetFloat(MoveHash, CharacterController.velocity.magnitude, 0.1f, Time.deltaTime);
+    }
+
+
+    public void PlayHit() => 
+      Animator.SetTrigger(HitHash);
+
+    public void PlayAttack() => 
+      Animator.SetTrigger(AttackHash);
+
+    public void PlayDeath() => 
+      Animator.SetTrigger(DieHash);
+
+    public void ResetToIdle() => 
+      Animator.Play(_idleStateHash, -1);
+
     private AnimatorState StateFor(int stateHash)
     {
       AnimatorState state;
@@ -63,7 +67,7 @@ namespace View.Hero
         state = AnimatorState.Died;
       else
         state = AnimatorState.Unknown;
-      
+
       return state;
     }
   }

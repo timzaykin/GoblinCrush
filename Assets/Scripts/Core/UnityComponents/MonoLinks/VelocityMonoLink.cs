@@ -3,7 +3,7 @@ using Core.UnityComponents.MonoLinks.Base;
 
 namespace Core.UnityComponents.MonoLinks
 {
-	public class VelocityMonoLink : MonoLink<Velocity>
-	{
-	}
+  public class VelocityMonoLink : MonoLink<Velocity>
+  {
+  }
 }

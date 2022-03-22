@@ -5,21 +5,21 @@ using UnityEngine;
 
 namespace Core.Systems.MoveSystems
 {
-	public class MoveSystem : IEcsRunSystem
-	{
-		private EcsFilter<InputDirection> _filter = null;
-		private EcsFilter<CharacterLink, Position> _characterFilter = null;
-		
-		public void Run()
-		{
-			foreach (int index in _filter)
-			{
-				ref EcsEntity entity = ref _filter.GetEntity(index);
-				ref Position position = ref entity.Get<Position>();
-				InputDirection direction = _filter.Get1(index);
+  public class MoveSystem : IEcsRunSystem
+  {
+    private EcsFilter<CharacterLink, Position> _characterFilter = null;
+    private readonly EcsFilter<InputDirection> _filter = null;
 
-				position.Value = new Vector3(direction.Value.x, 0, direction.Value.y);
-			}
-		}
-	}
+    public void Run()
+    {
+      foreach (var index in _filter)
+      {
+        ref var entity = ref _filter.GetEntity(index);
+        ref var position = ref entity.Get<Position>();
+        var direction = _filter.Get1(index);
+
+        position.Value = new Vector3(direction.Value.x, 0, direction.Value.y);
+      }
+    }
+  }
 }

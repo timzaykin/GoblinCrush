@@ -5,15 +5,15 @@ using UnityEngine;
 
 namespace Core.UnityComponents.MonoLinks.PhysicsLinks
 {
-	public class OnCollisionEnterMonoLink : PhysicsLinkBase
-	{
-		public void OnCollisionEnter(Collision other)
-		{
-			_entity.Get<OnCollisionEnterEvent>() = new OnCollisionEnterEvent
-			{
-				Collision = other,
-				Sender = gameObject
-			};
-		}
-	}
+  public class OnCollisionEnterMonoLink : PhysicsLinkBase
+  {
+    public void OnCollisionEnter(Collision other)
+    {
+      _entity.Get<OnCollisionEnterEvent>() = new OnCollisionEnterEvent
+      {
+        Collision = other,
+        Sender = gameObject
+      };
+    }
+  }
 }

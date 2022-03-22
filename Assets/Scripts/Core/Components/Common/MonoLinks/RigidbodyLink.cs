@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Core.Components.Common.MonoLinks
 {
-    [Serializable]
-    public struct RigidbodyLink
-    {
-        public Rigidbody Value;
-    }
+  [Serializable]
+  public struct RigidbodyLink
+  {
+    public Rigidbody Value;
+  }
 }

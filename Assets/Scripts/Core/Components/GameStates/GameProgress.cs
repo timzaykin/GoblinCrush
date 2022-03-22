@@ -1,7 +1,7 @@
 namespace Core.Components.GameStates
 {
-	public struct GameProgress
-	{
-		public bool IsPause;
-	}
+  public struct GameProgress
+  {
+    public bool IsPause;
+  }
 }

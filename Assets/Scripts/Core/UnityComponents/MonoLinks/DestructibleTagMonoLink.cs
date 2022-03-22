@@ -3,8 +3,7 @@ using Core.UnityComponents.MonoLinks.Base;
 
 namespace Core.UnityComponents.MonoLinks
 {
-	public class DestructibleTagMonoLink : MonoLink<DestructibleTag>
-	{
-		
-	}
+  public class DestructibleTagMonoLink : MonoLink<DestructibleTag>
+  {
+  }
 }

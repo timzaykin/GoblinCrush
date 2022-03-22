@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace Core.Components.Common.MonoLinks
 {
-    [Serializable]
-    public struct GameObjectLink
-    {
-        public GameObject Value;
-    }
+  [Serializable]
+  public struct GameObjectLink
+  {
+    public GameObject Value;
+  }
 }
