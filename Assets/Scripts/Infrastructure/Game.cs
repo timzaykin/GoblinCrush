@@ -10,9 +10,9 @@ namespace Infrastructure
     public LevelData LevelData;
     public GameStateMachine StateMachine;
 
-    public Game(ICoroutineRunner coroutineRunner, LoadingCurtain curtain)
+    public Game(ICoroutineRunner coroutineRunner, StaticData staticData, LoadingCurtain curtain)
     {
-      StateMachine = new GameStateMachine(new SceneLoader(coroutineRunner), curtain, AllServices.Container);
+      StateMachine = new GameStateMachine(new SceneLoader(coroutineRunner), curtain,staticData, AllServices.Container);
     }
   }
 }

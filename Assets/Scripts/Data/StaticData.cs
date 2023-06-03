@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 namespace Data
@@ -9,8 +10,12 @@ namespace Data
     public float ClampVelocity = 0.2f;
     public Vector3 GlobalGravitation;
     public Vector3 PlayerAddForce;
-    public Vector3[] SceneObjectPositions;
-    public string SceneObjectPrefab;
+    public LevelData[] Levels;
     public float SpawnTimer;
+
+    public LevelData GetLevelByName(string levelName)
+    {
+      return Levels.FirstOrDefault(x => x.LevelName == levelName);
+    }
   }
 }

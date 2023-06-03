@@ -35,6 +35,6 @@ namespace Infrastructure.States
         ?? NewProgress();
 
     private PlayerProgress NewProgress() => 
-      new PlayerProgress("Main");
+      new PlayerProgress("Level1");
   }
 }

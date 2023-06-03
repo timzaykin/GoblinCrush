@@ -7,17 +7,17 @@ namespace Core.Systems.Spawners
 {
   public class SpawnSceneObjects : IEcsInitSystem
   {
-    private StaticData _staticData;
+    private LevelData _levelData;
     private readonly EcsWorld _world = null;
 
     public void Init()
     {
-      foreach (var position in _staticData.SceneObjectPositions)
+      foreach (var levelObject in _levelData.LevelObjects)
         _world.NewEntity().Get<SpawnPrefab>() = new SpawnPrefab
         {
-          PrefabPath = _staticData.SceneObjectPrefab,
-          Position = position,
-          Rotation = Quaternion.identity,
+          PrefabPath = levelObject.PrefabPath,
+          Position = levelObject.Position,
+          Rotation = levelObject.Rotation,
           Parent = null
         };
     }
