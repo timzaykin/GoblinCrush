@@ -236,12 +236,13 @@ namespace Core
     private EcsSystems CoreGameplaySystems(string name)
     {
       return new EcsSystems(_world, name)
-        .OneFrame<OnDestructibleCollisionEvent>()
         .Add(new DestructibleCollisionCheckerSystem())
         .Add(new HandleEnemyTriggerCollisionSystem())
         .Add(new UpdateAbilityCooldownSystem())
+        .Add(new DestroyByTimerSystem())
 //			.OneFrame<DeadEvent>()
-        .Add(new DestroyObjectsByCollisionSystem());
+        // .Add(new DestroyObjectsByCollisionSystem())
+        ;
     }
   }
 }

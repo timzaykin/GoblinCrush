@@ -29,6 +29,7 @@ namespace Core.UnityComponents.Factories
         var ecsEntity = _world.NewEntity();
         monoEntity.Make(ref ecsEntity);
       }
+      spawnData.OnComplete?.Invoke(monoEntities[0]);
     }
   }
 }

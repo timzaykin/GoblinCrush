@@ -1,4 +1,5 @@
 using System;
+using Core.UnityComponents.DestructibleBehaviours;
 
 namespace Core.Components.Objects.Tags
 {
@@ -6,5 +7,6 @@ namespace Core.Components.Objects.Tags
   public struct DestructibleTag
   {
     public int Score;
+    public DestructibleBehaviourBase Behavoiur;
   }
 }

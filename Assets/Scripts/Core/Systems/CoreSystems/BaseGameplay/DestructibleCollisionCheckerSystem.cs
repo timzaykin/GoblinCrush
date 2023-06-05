@@ -1,8 +1,11 @@
+using Core.Components.Common.MonoLinks;
 using Core.Components.Core;
 using Core.Components.Objects.Tags;
 using Core.Components.PhysicsEvents;
 using Core.UnityComponents.MonoLinks;
+using Core.UnityComponents.MonoLinks.Base;
 using Leopotam.Ecs;
+using UnityEngine;
 
 namespace Core.Systems.CoreSystems.BaseGameplay
 {
@@ -21,13 +24,11 @@ namespace Core.Systems.CoreSystems.BaseGameplay
         var onCollisionEnterEvent = entity.Get<OnCollisionEnterEvent>();
 
         var collisionGameObject = onCollisionEnterEvent.Collision.gameObject;
-        var destructible = collisionGameObject.GetComponent<DestructibleTagMonoLink>();
-        if (destructible == null)
+        var destructible = collisionGameObject.GetComponent<MonoEntity>();
+        if (destructible == null || !destructible.Entity.Has<DestructibleTag>())
           continue;
-
-        var DistructableCollision = _world.NewEntity();
-        ref var objectToDistuction = ref DistructableCollision.Get<OnDestructibleCollisionEvent>();
-        objectToDistuction.ObstacleObject = onCollisionEnterEvent.Collision.gameObject;
+        var weaponTransform = entity.Get<GameObjectLink>().Value.transform;
+        destructible.Entity.Get<DestructibleTag>().Behavoiur.Destruct(_world, destructible.Entity, weaponTransform.position);
       }
     }
   }

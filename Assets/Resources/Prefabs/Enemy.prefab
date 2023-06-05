@@ -93,6 +93,8 @@ GameObject:
   - component: {fileID: 4739028351922008886}
   - component: {fileID: 4739028351922008887}
   - component: {fileID: 4739028351922008873}
+  - component: {fileID: 2763536938206086987}
+  - component: {fileID: 8742528597980607432}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -306,6 +308,35 @@ MonoBehaviour:
   _rigidbody: {fileID: 4739028351922008874}
   _weaponCollision: {fileID: 4739028350642558373}
   _view: {fileID: 4739028351922008886}
+--- !u!114 &2763536938206086987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739028351922008865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b58c3220c674c96bd2b712a7088f069, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Value:
+    Score: 0
+    Behavoiur: {fileID: 8742528597980607432}
+--- !u!114 &8742528597980607432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739028351922008865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f7da531cd3d473bbec37c439f332d67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ragdollPrefab: Prefabs/SpearmanRagdoll
+  _ragdollSpawnPosition: {fileID: 4739028351922008875}
 --- !u!1001 &4739028350761449593
 PrefabInstance:
   m_ObjectHideFlags: 0
