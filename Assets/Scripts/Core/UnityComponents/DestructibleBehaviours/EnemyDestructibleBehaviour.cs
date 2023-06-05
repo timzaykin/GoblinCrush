@@ -24,7 +24,6 @@ namespace Core.UnityComponents.DestructibleBehaviours
         OnComplete = monoEntity =>
         {
           var rb = monoEntity.Entity.Get<RigidbodyLink>();
-          var transform = monoEntity.Entity.Get<GameObjectLink>().Value.transform;
           rb.Value.AddExplosionForce(1000f,weaponTransform,10f);
         }
       };
