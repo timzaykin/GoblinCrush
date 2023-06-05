@@ -1,3 +1,4 @@
+using Core.UnityComponents.MonoLinks.Base;
 using UnityEngine;
 
 namespace Core.Components.PhysicsEvents
@@ -7,4 +8,10 @@ namespace Core.Components.PhysicsEvents
     public GameObject Sender;
     public Collision Collision;
   }
+
+  public struct OnEnemyTriggerEnter
+  {
+    public MonoEntity Other;
+  }
+
 }

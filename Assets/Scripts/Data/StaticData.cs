@@ -1,5 +1,6 @@
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Data
 {
@@ -11,11 +12,17 @@ namespace Data
     public Vector3 GlobalGravitation;
     public Vector3 PlayerAddForce;
     public LevelData[] Levels;
+    public EnemyData[] Enemies;
     public float SpawnTimer;
 
     public LevelData GetLevelByName(string levelName)
     {
       return Levels.FirstOrDefault(x => x.LevelName == levelName);
+    }
+
+    public EnemyData GetEnemyById(string enemyId)
+    {
+      return Enemies.FirstOrDefault(x => x.EnemyId == enemyId);
     }
   }
 }

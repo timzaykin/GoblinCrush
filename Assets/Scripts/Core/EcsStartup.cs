@@ -123,6 +123,7 @@ namespace Core
 //			.Add(scoreSystems)
         .Add(movableSystems)
         .OneFrame<OnCollisionEnterEvent>()
+        .OneFrame<OnEnemyTriggerEnter>()
         .OneFrame<OnTriggerEnterEvent>()
         .Inject(_sceneData)
         .Inject(_staticData)
@@ -211,6 +212,7 @@ namespace Core
       return new EcsSystems(_world, name)
         .Add(new SpawnPlayer())
         .Add(new SpawnSceneObjects())
+        .Add(new SpawnEnemyObjects())
         .Add(new SpawnSystem());
       ;
     }
@@ -225,8 +227,8 @@ namespace Core
     private EcsSystems MovableSystems(string name)
     {
       return new EcsSystems(_world, name)
-        //	.Add(new GravitationSystem())
         .Add(new MoveSystem())
+        .Add(new EnemyFollowAndAttackSystem())
         .Add(new UpdateCharacterPosition())
         .Add(new SlowdownSystem());
     }
@@ -236,6 +238,8 @@ namespace Core
       return new EcsSystems(_world, name)
         .OneFrame<OnDestructibleCollisionEvent>()
         .Add(new DestructibleCollisionCheckerSystem())
+        .Add(new HandleEnemyTriggerCollisionSystem())
+        .Add(new UpdateAbilityCooldownSystem())
 //			.OneFrame<DeadEvent>()
         .Add(new DestroyObjectsByCollisionSystem());
     }

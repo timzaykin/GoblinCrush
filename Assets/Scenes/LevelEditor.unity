@@ -1454,6 +1454,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &302016448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 302016450}
+  - component: {fileID: 302016449}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &302016449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302016448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef3e9c941855134b81d02174159446d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnemyId: Spearman
+--- !u!4 &302016450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302016448}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.5, y: 0, z: 20}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &317854827
 GameObject:
   m_ObjectHideFlags: 0
@@ -11744,238 +11789,444 @@ MonoBehaviour:
   - Assets/Resources/Enviroment/Prefabs/Environment/
   - Assets/Resources/Enviroment/Prefabs//Props/
   _levelData: {fileID: 11400000, guid: c5edf1cff17dfd74cb97656c1ee9a37c, type: 2}
-  _pathNumber: 0
+  _pathNumber: 1
   _levelName: Level1
   _playerSpawnPosition: {fileID: 290441606}
+  _enemySpawnPoints:
+  - {fileID: 302016449}
   Prefabs:
-  - Prefab: {fileID: 179324, guid: ca36cb4d7411091498d4fce0cd736d0d, type: 3}
+  - Prefab: {fileID: 151814, guid: 13fee639388b48b4499570bc5d767a78, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Alter_Evil_01
-  - Prefab: {fileID: 168934, guid: 0fdb9b763c5371b4886126649bafbfcc, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_AlchemyTable_01
+  - Prefab: {fileID: 177322, guid: f7076892405c89e4596ba470ff561841, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Alter_Good_01
-  - Prefab: {fileID: 147754, guid: f7bb700f5680f3a4fb67f43ecb396f7e, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Banner_01
+  - Prefab: {fileID: 163908, guid: 907ab00fdaf9cef468820581e2d80102, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Cave_Wall_01
-  - Prefab: {fileID: 145242, guid: ccbd9ca656fcfe44d8f3fce467c82edd, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Banner_Emblem_01
+  - Prefab: {fileID: 154738, guid: 9361846e05659cb46a94546301f00687, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Cave_Wall_02
-  - Prefab: {fileID: 177636, guid: 74be190b95c3d294b8ec26fa7513fbb4, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Banner_Emblem_02
+  - Prefab: {fileID: 166834, guid: 37c430154c2babc45b765af3c1b19598, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Cave_Wall_03
-  - Prefab: {fileID: 158178, guid: 5aa30891913dc934fa50d8fc19f4fde3, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Banner_Emblem_03
+  - Prefab: {fileID: 174802, guid: bb167b09f142b5f44b1c973d7931725f, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Door_01
-  - Prefab: {fileID: 141548, guid: 0c3d10cdbefe7ef47bccd382245c83ac, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Banner_Emblem_Ripped_01
+  - Prefab: {fileID: 172942, guid: 6c4d436db8e75fe4d90200a906d2e486, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Door_02
-  - Prefab: {fileID: 175432, guid: 8f8b4c2ea7db39f4781dead27f8b1c3d, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Banner_Emblem_Ripped_02
+  - Prefab: {fileID: 135422, guid: 033a7e30fe0d06c40ae03e88ef201318, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Door_03
-  - Prefab: {fileID: 7225593993079870516, guid: 9c79e447d7d515347833ecca874905ea, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Banner_Emblem_Ripped_03
+  - Prefab: {fileID: 125482, guid: 32cf7ae4f47affa48b7bf5c40b5b8d19, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Doorway_01
-  - Prefab: {fileID: 103012, guid: 1060842e0a1c5ce4194a25d2a93850e3, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Banner_Ripped_01
+  - Prefab: {fileID: 181920, guid: 11cfe5a82cd433047ab229387a1e65df, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Dungeon_Entrance_01
-  - Prefab: {fileID: 138062, guid: 3a57fe59d56ccaf4f8162d230fd33fba, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Banner_Ripped_02
+  - Prefab: {fileID: 118958, guid: 027a3bf61d996c04ab3f64d861459dd0, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Dungeon_Entrance_02
-  - Prefab: {fileID: 139470, guid: 4f526ece9a611f4438575edfab301879, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Barrel_01
+  - Prefab: {fileID: 142410, guid: 898c0365541f6b5419a3d437922bc320, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Dark_01
-  - Prefab: {fileID: 100356, guid: 5889e3ed1d423134abf58ac0a4c6d974, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Barrel_02
+  - Prefab: {fileID: 190482, guid: 141b9dd81110d0e4a99ea09fd94d420b, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Dirt_01
-  - Prefab: {fileID: 156808, guid: eb22a10dfa9dba74cb8a347a40d13694, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Barrel_03
+  - Prefab: {fileID: 144940, guid: 3c730013bf2016e428af6a4a7768b5fa, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Lava_01
-  - Prefab: {fileID: 172604, guid: 72ee938e36712134b9a16980629526a3, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Barrel_Broken_01
+  - Prefab: {fileID: 169036, guid: 05b34aad8cebf2a4799e5d0e0a0a264c, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_01
-  - Prefab: {fileID: 157892, guid: 3ae87325551afc646a8927b8ba7d04c1, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Bed_01
+  - Prefab: {fileID: 156060, guid: c22f233d5487b7e40890f1db7ed8341d, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_02
-  - Prefab: {fileID: 100032, guid: 8e49cba06dcdfc3439b1507dde6d28c0, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Bed_02
+  - Prefab: {fileID: 153764, guid: da022e1561400c64ea55cb06af0f9f44, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_03
-  - Prefab: {fileID: 136950, guid: abeede308550bf74c8b88218b6b3e39f, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Bed_03
+  - Prefab: {fileID: 125756, guid: 887e3c852ec432f4f8cf97f65d71e91e, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_Broken_01
-  - Prefab: {fileID: 154696, guid: 09a76891cfd8c9a48b3a6fb9f6676d5e, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Bench_01
+  - Prefab: {fileID: 107648, guid: 3399df232015b5048a1d4cd47bfe3974, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_Broken_02
-  - Prefab: {fileID: 164310, guid: 0e20b0fba37f2f449b462588b4be11a3, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Bench_Broken_01
+  - Prefab: {fileID: 182368, guid: 8bddcfc563a36b24f9dc4f0ce3bbb138, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_Broken_03
-  - Prefab: {fileID: 174902, guid: fbb0da5a31eaf6f4b813a97684fcc41b, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_BloodSplat_01
+  - Prefab: {fileID: 103084, guid: 0884236a20f5a204d8844843d88978bc, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_Broken_04
-  - Prefab: {fileID: 176172, guid: 835caca5433f2a44b95816ffef0a5187, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_BloodSplat_02
+  - Prefab: {fileID: 174628, guid: 21b53d388a088124f98515bb62a93ef1, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_Broken_05
-  - Prefab: {fileID: 173794, guid: 7d789c5bb85b14c4ab44d5c81a2965cc, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_BloodSplat_03
+  - Prefab: {fileID: 177772, guid: 2fdb206bca0e88d4a8a18014aa18bd7b, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_ClearEdge_01
-  - Prefab: {fileID: 154948, guid: 2cf390c5e9363db42b4f2783fbe5991e, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_BloodSplat_04
+  - Prefab: {fileID: 182436, guid: 061f8c0920336704a9a34f18ffaaa3a5, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_ClearEdge_02
-  - Prefab: {fileID: 199166, guid: 352d37cf490a80045b4736575b648af4, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Bookshelf_01
+  - Prefab: {fileID: 111276, guid: c99deb75b09730847a685e71b82f1431, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Stone_ClearEdge_03
-  - Prefab: {fileID: 150538, guid: f61672984fdb17649a2390aa14b0300a, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Brazier_01
+  - Prefab: {fileID: 187894, guid: 4087c77299ae62749881b205217e1c64, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Floor_Wood_01
-  - Prefab: {fileID: 123296, guid: 47b5fc915c1464d4e9da591ef4fadcab, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Brazier_02
+  - Prefab: {fileID: 125420, guid: dc0812e74328c2b49bd11a062b2a935e, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Bridge_01
-  - Prefab: {fileID: 140628, guid: 8510ab189db0e1540899381375761818, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Cage_01
+  - Prefab: {fileID: 142874, guid: 1ef4dd93dab6e69498d268d17fcdc66b, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Hut_01
-  - Prefab: {fileID: 106124, guid: 325b53aabc0aa434eaf24520a2df278a, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Candle_01
+  - Prefab: {fileID: 117844, guid: cf57d684ab010c24ab4c70f25f964306, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Platform_Large_01
-  - Prefab: {fileID: 158986, guid: a3293876809887745903c3d9393a9dd3, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Candle_02
+  - Prefab: {fileID: 161132, guid: 8b5663986c1348f4dbbfcee7029d1519, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Platform_Large_02
-  - Prefab: {fileID: 113538, guid: 230478808a5e3ba46bec20c3c7e944f8, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Candle_03
+  - Prefab: {fileID: 154162, guid: cb19cf532cb13814ca5674b3a3784182, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Platform_Small_01
-  - Prefab: {fileID: 194208, guid: 56497080635b1f444a0d9016c8b7f9d3, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Candle_Flame_01
+  - Prefab: {fileID: 156554, guid: 78e62412f73e94b49b918c80ac4bce03, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Platform_Small_02
-  - Prefab: {fileID: 191706, guid: 4cf48e5f011ba184585632ad4d1814ac, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_CandleStand_01
+  - Prefab: {fileID: 170560, guid: e48e29ed31a89bc45a47e31ea282be74, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Platform_Small_03
-  - Prefab: {fileID: 148350, guid: 9bf33883ba838684dada756714c48024, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Cauldron_01
+  - Prefab: {fileID: 115036, guid: a33b976bec48cc34298f8b604c0ef013, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Platform_Small_04
-  - Prefab: {fileID: 199620, guid: c2b76d8503c414d408591f2c3b62f5cc, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_ChairStraps_01
+  - Prefab: {fileID: 130458, guid: 8d72fd17e6233e44c8299f5d80c3442b, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_SpikeBeam_01
-  - Prefab: {fileID: 120230, guid: 7065598f1c750924fb6340bc4470c16d, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Chandelier_01
+  - Prefab: {fileID: 159206, guid: 58bd7588bfe562141a6fdaaa24bd6adc, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_SpikeBeam_02
-  - Prefab: {fileID: 196542, guid: 56d8c93c1dc370a4c8c5f36fe9d50be0, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Chest_01
+  - Prefab: {fileID: 139998, guid: cc896336fd3bf2c4996580a2bccb6673, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_SpikeBeam_03
-  - Prefab: {fileID: 138422, guid: 99bb31ffc7fc2c846b9f2fbac110e353, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Chest_02
+  - Prefab: {fileID: 139338, guid: 2f6e6547bf3f609469010095792aecf3, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Tunnel_Entrance_01
-  - Prefab: {fileID: 167164, guid: 1378514d79bd4bb4d98191df08121fb1, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Chest_03
+  - Prefab: {fileID: 119304, guid: b93f711718e2c6446abc441a3082305d, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Tunnel_Supports_01
-  - Prefab: {fileID: 194728, guid: 3653d0a49394185459ecba7ba1d4ffee, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Chest_Mimic_01
+  - Prefab: {fileID: 104968, guid: 53208521fffd8a242acf30e93a01b99a, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Goblin_Tunnel_Supports_02
-  - Prefab: {fileID: 154028, guid: 73c08e84ae0965a4b9674d1c89f21e59, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Chest_Skull_01
+  - Prefab: {fileID: 149066, guid: 77ae18e691fdd334a9364236b00009dd, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Pillar_Stone_01
-  - Prefab: {fileID: 141494, guid: 78c3ae7559023df4d9b6d7ac0bd98987, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Coin_01
+  - Prefab: {fileID: 106006, guid: c2b38c070ead7e5419a9abd37b9a36ae, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Pillar_Stone_02
-  - Prefab: {fileID: 143828, guid: f5ca828efdf5178449d24bc47e2ef5f5, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Coin_02
+  - Prefab: {fileID: 129130, guid: 47ea078add05f31438d86ab012d95ec1, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Pillar_Stone_03
-  - Prefab: {fileID: 158054, guid: 8ae35cd258a76f84f914820fefa0023c, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Coin_03
+  - Prefab: {fileID: 169214, guid: 0c997d1132feeb340b64d77d3e3ece64, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Pillar_Stone_Broken_01
-  - Prefab: {fileID: 169088, guid: 12eb4af512d00dd4ab53eae804395901, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Coin_04
+  - Prefab: {fileID: 144442, guid: 0643624d73670a34a85c08095cb6f6bc, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Pillar_Stone_Broken_02
-  - Prefab: {fileID: 127772, guid: 51b012a9089d3cd45b50cc22fc305af9, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_CoinPile_01
+  - Prefab: {fileID: 189502, guid: 9d2f05d99a7b6744b85f7868f17c922c, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Pillar_Stone_Broken_03
-  - Prefab: {fileID: 169958, guid: 0793036a327118e468ed4bbec4b35042, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_CoinPile_02
+  - Prefab: {fileID: 195958, guid: bff6e96c9a9957544a4e7e492c61f71d, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Pillar_Wood_01
-  - Prefab: {fileID: 189750, guid: 2c71d36f0694be041a98610547fecfe1, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_CoinPile_03
+  - Prefab: {fileID: 196456, guid: cd2a7aebdad580e449538f9662d6e861, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Pit_01
-  - Prefab: {fileID: 181320, guid: d39f9ef3f9d3b94449ee1a524428fe38, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Crate_01
+  - Prefab: {fileID: 178912, guid: 2907f82560f3b3945829bbb91ed8bb41, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_PrisonCell_DoorFrame_01
-  - Prefab: {fileID: 109594, guid: c0d836e3cf8365d449cef8f25637c179, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Crate_02
+  - Prefab: {fileID: 197322, guid: 3498a35ca8dd34145a508df2bbcb67fe, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_PrisonCell_Wall_01
-  - Prefab: {fileID: 153732, guid: dd682e0ec46c0b54f899ac23e68590a1, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Drawers_01
+  - Prefab: {fileID: 178366, guid: c8cc1387de685be49b22b15f41ed09d3, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Railing_Stone_01
-  - Prefab: {fileID: 173668, guid: 08ec04697cd84e648921142e4831ef22, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Gem_01
+  - Prefab: {fileID: 160370, guid: d0b7aa200df1aa446a01c598f34a0702, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Railing_Stone_02
-  - Prefab: {fileID: 173746, guid: 4d2fa817022eab242a090b2c8a0c7f04, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Gem_02
+  - Prefab: {fileID: 151148, guid: 3654a2224fb2bd34d8682bc1bffb9435, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Railing_Stone_Pillar_01
-  - Prefab: {fileID: 190576, guid: e6969c2c79e4da842b8bc1ed7b1c19fb, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Gem_03
+  - Prefab: {fileID: 118552, guid: 592f797b391c93546aa17a518bcd4141, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Railing_Stone_Pillar_02
-  - Prefab: {fileID: 198492, guid: a36d4339bec70264782cf3e366bef6d8, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Gem_04
+  - Prefab: {fileID: 134586, guid: cc147314fe769964d9ce4e85de2cbffd, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Railing_Wood_01
-  - Prefab: {fileID: 119170, guid: 1f45d6d75a3d902418f6ce7315d18908, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Gem_05
+  - Prefab: {fileID: 187804, guid: 2c0f7fb2941562346a966cf93b2b5d78, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Railing_Wood_02
-  - Prefab: {fileID: 140918, guid: 6ba6fd577a5e3ca4b8b0a3d36d39a6c3, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Goblin_Crane_01
+  - Prefab: {fileID: 189026, guid: 1a85f0154386b4a4f8b7d98a7b59daf5, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Stairs_Spiral_01
-  - Prefab: {fileID: 106528, guid: 10c188c55f489c641b5b069e669d223a, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Goblin_Fence_01
+  - Prefab: {fileID: 170046, guid: b7f3d37cbf09c3c4f8b2e7eaa4760597, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Stairs_Stone_01
-  - Prefab: {fileID: 175728, guid: d038d166340e4514c92b68abb1268ed1, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Goblin_Ladder_01
+  - Prefab: {fileID: 150640, guid: df48b1142e5337548bb806b365ccc846, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_StoneCircle_01
-  - Prefab: {fileID: 194996, guid: a39dba6be3e1a2a46ad8bbeebddf91f4, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Goblin_Ladder_02
+  - Prefab: {fileID: 170120, guid: 41fe6e3d694b3b041a2e8dc96916a86a, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Entrance_01
-  - Prefab: {fileID: 105740, guid: d97974dd47e87374d939acde18eedd33, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Goblin_Torch_01
+  - Prefab: {fileID: 132450, guid: 7d29233f1f374a040a3936ef1b0e9c81, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Floor_01
-  - Prefab: {fileID: 126304, guid: fe1ed406c4cb39f428a31bfe333b2301, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Grate_01
+  - Prefab: {fileID: 138054, guid: aab11d9732a248247b3cb0e74d069219, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Floor_02
-  - Prefab: {fileID: 155500, guid: c1dcb0322b539634fb85bcb9550da087, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_HangingChain_01
+  - Prefab: {fileID: 186368, guid: 702ad16423cea4d499b479998f268d17, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Floor_03
-  - Prefab: {fileID: 145218, guid: e27315132fc09934db07fd401732b131, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_HangingChain_02
+  - Prefab: {fileID: 103546, guid: 4396457c082075841a5d214cb9bb51cf, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Floor_04
-  - Prefab: {fileID: 190988, guid: 8f7ca30ec6adeda40804f6426d61e3f7, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_HangingChain_03
+  - Prefab: {fileID: 168314, guid: a3f431f38e9c55c4a83996f8f9208dba, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Pillar_01
-  - Prefab: {fileID: 116792, guid: a138396c306f46e4eb8677e02bbf2adc, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_HangingChain_04
+  - Prefab: {fileID: 181030, guid: f340514c6aac5a9418b6d902b7f53444, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Pillar_02
-  - Prefab: {fileID: 191664, guid: 393a18a191d4d6f4a968edb53f6747c0, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_HangingChain_05
+  - Prefab: {fileID: 192202, guid: 7eeab3a9ca1084c47a3084f0d8412ab3, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Pillar_Broken_01
-  - Prefab: {fileID: 151318, guid: 43eb78cec08539d419a51aac3b1bc4e7, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_HangingChain_06
+  - Prefab: {fileID: 143208, guid: 6d90ef500405d9d439870cc0bfd1b470, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Stairs_01
-  - Prefab: {fileID: 175210, guid: e5dfe9ff355265846b665b01d2b84b61, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_HangingChain_07
+  - Prefab: {fileID: 109218, guid: a1a2ccd52c7ff26489b004474dd58021, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_StoneEdge_01
-  - Prefab: {fileID: 125022, guid: 99133c0cd472d014a9c9ac6887c1e6d1, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Judas_Cradel_01
+  - Prefab: {fileID: 193832, guid: ba235f36e55369c4f80b44fa49b8fa89, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Wall_01
-  - Prefab: {fileID: 126936, guid: 44cb508f9183cc148844499a64b64ba1, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Lava_Flow_01
+  - Prefab: {fileID: 120692, guid: 486263de0d01ae14782ec45e06c9e38a, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Wall_02
-  - Prefab: {fileID: 112780, guid: 42d3fbc79e67eaa4eaf1fad6ff8e4495, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_LavaBucket_01
+  - Prefab: {fileID: 117892, guid: 7252b2a307ed503479417dfc92351f39, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Undead_Wall_03
-  - Prefab: {fileID: 163364, guid: 25e618ad9977daf44a684be7ffc5046b, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_LavaBucket_02
+  - Prefab: {fileID: 168272, guid: a0f69fdd70dc15146b35298f3c0cd6de, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Wall_01
-  - Prefab: {fileID: 142642, guid: 59a2998e00da19c4a974d036e8f41503, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_LavaBucket_03
+  - Prefab: {fileID: 134410, guid: 50f315b818ee102489edc51e8657621c, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Wall_02
-  - Prefab: {fileID: 153800, guid: 146944f4bc6d3da479fffeba45c0d908, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Lever_Floor_01
+  - Prefab: {fileID: 108480, guid: d46d58b63b5b3754e96fc098b599629b, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Wall_Half_01
-  - Prefab: {fileID: 172634, guid: 4ba830aba9b830d42851df024d33bf3a, type: 3}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Panks_01
+  - Prefab: {fileID: 144266, guid: 8268078fe35f14a45a49e1bb9f5847a2, type: 3}
     Icon: {fileID: 0}
-    Path: Enviroment/Prefabs/Environment/SD_Env_Wall_Half_02
+    Path: Enviroment/Prefabs/Props/SD_Prop_Panks_02
+  - Prefab: {fileID: 152452, guid: 3cd1c18132a9ea643b1c54b00bce6ce3, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Panks_03
+  - Prefab: {fileID: 106780, guid: 5acd0094cb69265429d9ffcb6b7b0895, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_PanksRed_01
+  - Prefab: {fileID: 120956, guid: d3e8da1e794ac6c478b815655840a3fc, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_PanksRed_02
+  - Prefab: {fileID: 157288, guid: 998a106be485b954885c292ef9cfafc0, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_PanksRed_03
+  - Prefab: {fileID: 190922, guid: 00681450497d6bc439f037c04d05cb41, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Pedestal_01
+  - Prefab: {fileID: 101362, guid: 2566a226f1cc41f4b97ed8c024c77e17, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Pot_01
+  - Prefab: {fileID: 109274, guid: b131c4e5b11659844ad695035a09c896, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Pot_Large_01
+  - Prefab: {fileID: 118608, guid: faca720d8063fe04ea9eaba459ea2758, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Pot_Large_02
+  - Prefab: {fileID: 158558, guid: 58356c38a0ecbe84198a6aca93fae722, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Pot_Large_03
+  - Prefab: {fileID: 174698, guid: 6ce28cb505dbd6045a2f74a557623499, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Pot_Smashed_01
+  - Prefab: {fileID: 183710, guid: 79b591e1ca0726d43bcddd3e51b4d635, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Pot_Smashed_02
+  - Prefab: {fileID: 130644, guid: 3172cd7c4bb1c844480cf63cbddbba08, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Potion_01
+  - Prefab: {fileID: 122520, guid: 085bcf27a35c8de46bc8c5c3deeb6cd5, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Potion_02
+  - Prefab: {fileID: 187104, guid: a5b02902ffac6b147a8f232e86a58972, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_PotionBrew_01
+  - Prefab: {fileID: 125956, guid: 21e3daae9fca8bf46ab8ec4caf081705, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_PotionBrew_02
+  - Prefab: {fileID: 148188, guid: 69a98a36840466d4f93b3535a0d6cfa1, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_PotionBrew_03
+  - Prefab: {fileID: 144226, guid: bfb2a72d5cf27f141ad35c0bacdd5ad0, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rack_01
+  - Prefab: {fileID: 190080, guid: e159e073d5c62fd43b0fcf3ff6cf29e8, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rubble_01
+  - Prefab: {fileID: 113140, guid: 9302ad4951a0c324ba29a13e861f6a99, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rubble_02
+  - Prefab: {fileID: 102252, guid: 84bd14d32a08e764893082ef24162fed, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rubble_03
+  - Prefab: {fileID: 157632, guid: 90445f8fe17c81346a7bfedb97d2de33, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rubble_04
+  - Prefab: {fileID: 101308, guid: feb410d5a00299441b38f634873fabcd, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Blue_Large_01
+  - Prefab: {fileID: 175904, guid: 30b0e0fd3b4ebdd468d5a0a93f28be1d, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Blue_Large_02
+  - Prefab: {fileID: 125258, guid: 8892103af38edc84c9060b5d4e83987a, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Blue_Small_01
+  - Prefab: {fileID: 104920, guid: d1c0380d8c578224c80bde7d5239c18c, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Blue_Small_02
+  - Prefab: {fileID: 183234, guid: 62680723f4f555145a9a3adab705c30c, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Green_Large_01
+  - Prefab: {fileID: 187840, guid: 11aabaa5d4a866a4b95334ff02da93bc, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Green_Large_02
+  - Prefab: {fileID: 172544, guid: a286cfe41848d094da51eb8a62ae7eed, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Green_Small_01
+  - Prefab: {fileID: 177054, guid: 31e5ccd4bdb3b284b81edd580675a9a3, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Green_Small_02
+  - Prefab: {fileID: 158736, guid: b4998cbd62a12e14ba0956df4f13c72e, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Purple_Large_01
+  - Prefab: {fileID: 108434, guid: 0b66737911ee1694fac42fc1ec70d699, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Purple_Large_02
+  - Prefab: {fileID: 135644, guid: 570fc2483b5067043b2ec78b0709e885, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Purple_Small_01
+  - Prefab: {fileID: 155660, guid: 2cd2da8120fffb04aa43aadc018dcf03, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Purple_Small_02
+  - Prefab: {fileID: 101690, guid: 11176770c4dccd248b778edee0e1656b, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Red_Large_01
+  - Prefab: {fileID: 189640, guid: 751d5bca0e2cb6948bf67e5a99c199c9, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Red_Large_02
+  - Prefab: {fileID: 166370, guid: b3c57ce720b895749a1d2d37d658812f, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Red_Small_01
+  - Prefab: {fileID: 171748, guid: 7a0bd35fb7f614049aab42b2ac8baa38, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Rug_Red_Small_02
+  - Prefab: {fileID: 165018, guid: c506c81b637e38c458b86e77b83bdfcb, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Shelf_01
+  - Prefab: {fileID: 134320, guid: 4a0bea93918c226439d3cf5db9ae94bf, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Shelf_03
+  - Prefab: {fileID: 186418, guid: 19bf91be496fbea478d3040694446b87, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Shield_Rusty_01
+  - Prefab: {fileID: 198044, guid: 06ddc49c92c02ad45977687a67899e90, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Stone_Coffin_01
+  - Prefab: {fileID: 115494, guid: 6bbe31aff045e654dbeb72b499f6529c, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Stool_01
+  - Prefab: {fileID: 101020, guid: a9801b496c0b22542bd354dbd33e894d, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Sword_Rusty_01
+  - Prefab: {fileID: 143126, guid: a3003d4f4cc84184fb31aff870edab11, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Table_01
+  - Prefab: {fileID: 132446, guid: 69281900a4e544c4591cb055b2ae8514, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Table_03
+  - Prefab: {fileID: 175570, guid: 233afb8b0d58c3e4083fe988c8d0996c, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Tool_Hammer_01
+  - Prefab: {fileID: 190038, guid: 3af82c9db1f753a498909121f79d05c7, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Tool_Hook_01
+  - Prefab: {fileID: 175808, guid: cba7f2e66cc55474db59be8da0e7ee36, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Tool_Plier_01
+  - Prefab: {fileID: 179828, guid: 2f96a0c686abe7849b9821a489d6dc75, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Tool_Plier_02
+  - Prefab: {fileID: 193442, guid: 0194dfcf87e77974fa9b6b2c92e1b7ff, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Tool_Plier_03
+  - Prefab: {fileID: 176844, guid: c9afb3cf828d63440bca7320c95c1648, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Tool_Saw_01
+  - Prefab: {fileID: 168546, guid: f97e838ab8461684b817c3632e16b325, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Toolrack_01
+  - Prefab: {fileID: 100934, guid: 51c5cdb72ae8b9a4b9eeb0c7ae29a53c, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Toolrack_02
+  - Prefab: {fileID: 129940, guid: e3722a3c340f7334ba1c2605218cbbb7, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Torch_01
+  - Prefab: {fileID: 195990, guid: 4359407295b7d05468c8ac84b9181e99, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Trapdoor_01
+  - Prefab: {fileID: 164722, guid: 3c6066f9c68d6e846968372f931bb81c, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Treasure_Goblet_01
+  - Prefab: {fileID: 160394, guid: 6bd90c5ed0899a544a4095f0a052825c, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Vase_01
+  - Prefab: {fileID: 174224, guid: 6cbb8077a1a95cc43a773062049d267a, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Vase_02
+  - Prefab: {fileID: 103094, guid: 0cb91b0ee015a754ba78fef3315f929d, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Vase_03
+  - Prefab: {fileID: 172416, guid: 0b76fd65986e71e4fb9303f4279ba505, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_WagonWheel_01
+  - Prefab: {fileID: 145622, guid: d63f951329aca394ca6193f30d26362e, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_WagonWheel_02
+  - Prefab: {fileID: 190988, guid: 50972853f7b0841409b8fc95fae34341, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_WallCuffs_01
+  - Prefab: {fileID: 190776, guid: fe79f78336a9bcc428e0e03b61836802, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_WallGrate_01
+  - Prefab: {fileID: 118060, guid: 8b830163dccd54644924925730358826, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_WeaponRack_01
+  - Prefab: {fileID: 185364, guid: aa2515f5609f7ae46b6886fd43ed1dc9, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_WeaponRack_02
+  - Prefab: {fileID: 135984, guid: e6a6b63411205eb4bb76e9f3f9951c07, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_WeaponRack_03
+  - Prefab: {fileID: 157698, guid: e5844444c28bb1847a36ce598d00c5f6, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_WeaponRack_04
+  - Prefab: {fileID: 168536, guid: 9e9ae94e390a21d4dbac406afec45e6a, type: 3}
+    Icon: {fileID: 0}
+    Path: Enviroment/Prefabs/Props/SD_Prop_Winerack_01
 --- !u!4 &1649295192
 Transform:
   m_ObjectHideFlags: 0
@@ -11983,8 +12234,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649295190}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
-  m_LocalPosition: {x: 7.5, y: 2, z: 2.5}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071067}
+  m_LocalPosition: {x: 7.5, y: 0, z: 20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

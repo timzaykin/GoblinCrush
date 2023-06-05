@@ -18,4 +18,6 @@ MonoBehaviour:
   PlayerAddForce: {x: 0, y: 0, z: 0}
   Levels:
   - {fileID: 11400000, guid: c5edf1cff17dfd74cb97656c1ee9a37c, type: 2}
+  Enemies:
+  - {fileID: 11400000, guid: 20615aa06be7ebf4e9c9586ed0689475, type: 2}
   SpawnTimer: 0

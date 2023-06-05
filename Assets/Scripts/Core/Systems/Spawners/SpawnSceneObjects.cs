@@ -1,7 +1,6 @@
 ﻿using Core.Components.Common;
 using Data;
 using Leopotam.Ecs;
-using UnityEngine;
 
 namespace Core.Systems.Spawners
 {

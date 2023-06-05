@@ -7,6 +7,7 @@ namespace Core.UnityComponents.MonoLinks.Base
   public class MonoEntity : MonoLinkBase
   {
     private EcsEntity _entity;
+    public EcsEntity Entity => _entity;
 
     private MonoLinkBase[] _monoLinks;
 

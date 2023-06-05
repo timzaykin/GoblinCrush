@@ -12,6 +12,7 @@ namespace Data
     public string PlayerPrefabPath;
     public Vector3Data StartPosition;
     public LevelObject[] LevelObjects;
+    public EnemyObject[] EnemyObjects;
   }
   
   public struct LevelObject
@@ -19,5 +20,11 @@ namespace Data
     public Vector3 Position;
     public Quaternion Rotation;
     public string PrefabPath;
+  }
+
+  public struct EnemyObject
+  {
+    public Vector3 Position;
+    public string EnemyId;
   }
 }
