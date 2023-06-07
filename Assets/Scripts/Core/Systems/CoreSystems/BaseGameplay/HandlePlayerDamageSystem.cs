@@ -8,7 +8,6 @@ namespace Core.Systems.CoreSystems.BaseGameplay
 {
   public class HandlePlayerDamageSystem : IEcsRunSystem
   {
-    
     private readonly EcsFilter<PlayerHealth, DamageEvent> _filter = null;
     
     public void Run()
@@ -27,7 +26,6 @@ namespace Core.Systems.CoreSystems.BaseGameplay
           entity.Get<DeadEvent>();
           Debug.Log("Player death");
         }
-          
       }
     }
   }

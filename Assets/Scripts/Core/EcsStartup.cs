@@ -1,3 +1,4 @@
+using System;
 using Core.Components.Common.Input;
 using Core.Components.Core;
 using Core.Components.PhysicsEvents;
@@ -35,9 +36,10 @@ namespace Core
 
     private LevelData _levelData;
     private int _movableSystems;
-    private PauseService _pauseService;
     [SerializeField] private SceneData _sceneData;
+    private PauseService _pauseService;
     private ScoreService _scoreService;
+    private ChangeLevelService _changeLevelService;
 
     private int _spawnSystems;
 
@@ -46,16 +48,19 @@ namespace Core
     [SerializeField] private EcsUiEmitter _uiEmitter;
 
     private EcsWorld _world;
-
-    public void Initialize(LevelData levelData, IGameFactory gameFactory)
+    private Action _exitGameLoopStateAction;
+    
+    
+    public void Initialize(LevelData levelData, IGameFactory gameFactory, Action enterGameLoopStateAction, Action exitGameLoopStateAction)
     {
+      _exitGameLoopStateAction = exitGameLoopStateAction;
       _world = new EcsWorld();
       _systems = new EcsSystems(_world, "UpdateSystems");
       _fixedSystem = new EcsSystems(_world, "FixedUpdateSystems");
 
       _levelData = levelData;
       _gameFactory = gameFactory;
-      _inputService = AllServices.Container.Single<IInputService>();
+
 
       InitializedServices();
       InitializeObserver();
@@ -67,6 +72,7 @@ namespace Core
 
       Subscribe();
 
+      enterGameLoopStateAction?.Invoke();
       SetGameplayState(true);
       _isInitialized = true;
     }
@@ -74,8 +80,10 @@ namespace Core
 
     private void InitializedServices()
     {
-      _pauseService = new PauseService(true);
+      _pauseService = new PauseService(false);
       _scoreService = new ScoreService();
+      _changeLevelService = new ChangeLevelService(_exitGameLoopStateAction);
+      _inputService = AllServices.Container.Single<IInputService>();
     }
 
     private void OnChangePauseState(bool isPause)
@@ -110,6 +118,7 @@ namespace Core
         .Inject(_gameFactory)
         .Inject(_pauseService)
         .Inject(_scoreService)
+        .Inject(_changeLevelService)
         .Inject(_inputService)
         .Init();
     }
@@ -117,7 +126,7 @@ namespace Core
     private void InitializeFixedSystems()
     {
       var coreSystems = CoreGameplaySystems(Coregameplay);
-      var scoreSystems = ScoreSystems();
+      //var scoreSystems = ScoreSystems();
       var movableSystems = MovableSystems(Movable);
 
       _fixedSystem
@@ -132,6 +141,7 @@ namespace Core
         .Inject(_levelData)
         .Inject(_pauseService)
         .Inject(_scoreService)
+        .Inject(_changeLevelService)
         .Inject(_inputService)
         .Init();
     }
@@ -153,7 +163,7 @@ namespace Core
     private void CalcSystemIndexes()
     {
       _spawnSystems = _systems.GetNamedRunSystem(Spawn);
-      //	_coreGameplaySystems = _fixedSystem.GetNamedRunSystem(Coregameplay);
+      _coreGameplaySystems = _fixedSystem.GetNamedRunSystem(Coregameplay);
       _movableSystems = _fixedSystem.GetNamedRunSystem(Movable);
     }
 
@@ -215,6 +225,7 @@ namespace Core
         .Add(new SpawnPlayer())
         .Add(new SpawnSceneObjects())
         .Add(new SpawnEnemyObjects())
+        .Add(new SpawnLevelEnterSystem())
         .Add(new SpawnSystem());
       ;
     }
@@ -244,6 +255,8 @@ namespace Core
         .Add(new UpdateAbilityCooldownSystem())
         .Add(new DestroyByTimerSystem())
         .Add(new HandlePlayerDamageSystem())
+        .Add(new CheckEnemyCountSystem())
+        .Add(new ChangeLevelSystem())
         .Add(new DeathHandleSystem())
         ;
     }

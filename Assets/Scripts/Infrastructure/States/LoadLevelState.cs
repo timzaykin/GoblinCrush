@@ -52,7 +52,6 @@ namespace Infrastructure.States
     {
       InitGameWorld();
       InformProgressReaders();
-      _gameStateMachine.Enter<GameLoopState>();
     }
 
     private void InformProgressReaders()
@@ -78,9 +77,19 @@ namespace Infrastructure.States
     }
 
 
-    private static void InitializeEcs(LevelData levelData, IGameFactory _gameFactory)
+    private void InitializeEcs(LevelData levelData, IGameFactory gameFactory)
     {
-      Object.FindObjectOfType<EcsStartup>()?.Initialize(levelData, _gameFactory);
+      Object.FindObjectOfType<EcsStartup>()?.Initialize(levelData, gameFactory,()=> EnterGameLoop(levelData),
+        () =>
+        {
+          _gameStateMachine.Enter<LoadLevelState, string>(_progressService.Progress.WorldData.LevelName);
+        }
+      );
+    }
+
+    private void EnterGameLoop(LevelData levelData)
+    {
+      _gameStateMachine.Enter<GameLoopState, LevelData>(levelData);
     }
   }
 }

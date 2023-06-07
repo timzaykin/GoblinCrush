@@ -9,10 +9,12 @@ namespace Data
   public class LevelData : SerializedScriptableObject
   {
     public string LevelName;
+    public string NextLevelName;
     public string PlayerPrefabPath;
     public Vector3Data StartPosition;
     public LevelObject[] LevelObjects;
     public EnemyObject[] EnemyObjects;
+    public LevelObject LevelEnterObject;
   }
   
   public struct LevelObject
