@@ -8,6 +8,7 @@ namespace View.Enemy
   {
     private static readonly int MoveHash = Animator.StringToHash("Walk");
     private static readonly int AttackHash = Animator.StringToHash("Attack");
+    private static readonly int DashHash = Animator.StringToHash("Dash");
     private static readonly int CombatHash = Animator.StringToHash("Combat");
 
     
@@ -41,6 +42,8 @@ namespace View.Enemy
     public void SetCombat(bool value) =>
       Animator.SetBool(CombatHash, value);
 
+    public void SetDash(bool value) =>
+      Animator.SetBool(DashHash, value);
 
     private AnimatorState StateFor(int stateHash)
     {

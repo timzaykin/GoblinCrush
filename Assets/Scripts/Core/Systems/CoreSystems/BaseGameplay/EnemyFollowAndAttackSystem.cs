@@ -33,7 +33,7 @@ namespace Core.Systems.CoreSystems.BaseGameplay
         }
         else
         {
-          SetAttackEvent(ref navMesh, currentTransform,ref attackAbility,view, entity);
+          SetAttackEvent(ref targetEntity, ref navMesh, currentTransform,ref attackAbility,view, entity);
         }
         
       }
@@ -59,17 +59,18 @@ namespace Core.Systems.CoreSystems.BaseGameplay
       currentTransform.forward = direction;
     }
     
-    private void SetAttackEvent(ref NavMeshLink navMesh, Transform currentTransform,ref AttackAbility attackAbility, EnemyView view, EcsEntity entity)
+    private void SetAttackEvent(ref MonoEntity currentTarget,ref NavMeshLink navMesh, Transform currentTransform,ref AttackAbility attackAbility, EnemyView view, EcsEntity entity)
     {
 
       navMesh.Value.SetDestination(currentTransform.position);
       navMesh.Value.speed = 0;
       view.EnemyAnimator.PlayWalk(false);
+      SetToTargetDirection(currentTarget.transform, currentTransform);
       if (attackAbility.AttackCooldown <= attackAbility.LastAttackTime)
       {
+        entity.Get<AttackEvent>();
         attackAbility.LastAttackTime = 0;
         attackAbility.Ability.DoAttack();
-        entity.Get<AttackEvent>();
       }
     }
   }

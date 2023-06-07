@@ -1,12 +1,13 @@
 ﻿using Core.Components.Common;
 using Data;
 using Leopotam.Ecs;
+using UnityEngine;
 
 namespace Core.Systems.Spawners
 {
   public class SpawnSceneObjects : IEcsInitSystem
   {
-    private LevelData _levelData;
+    private readonly LevelData _levelData = null;
     private readonly EcsWorld _world = null;
 
     public void Init()

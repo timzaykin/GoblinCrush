@@ -16,5 +16,29 @@ MonoBehaviour:
   deleteDllAfterBuilds: 1
   AutomateForAllAOTPlatforms: 1
   automateForPlatforms: 0900000014000000
-  lastScan: 0
-  supportSerializedTypes: []
+  lastScan: 638215888242630374
+  supportSerializedTypes:
+  - TypeName: Data.EnemyObject, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Data.EnemyObject[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.Single, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Data.LevelObject, Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: Data.LevelObject[], Assembly-CSharp
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Quaternion, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1
+  - TypeName: System.String, mscorlib
+    IsCustom: 0
+    Emit: 1
+  - TypeName: UnityEngine.Vector3, UnityEngine.CoreModule
+    IsCustom: 0
+    Emit: 1

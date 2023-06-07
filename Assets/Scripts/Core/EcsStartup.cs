@@ -11,7 +11,9 @@ using Infrastructure.Factory;
 using Infrastructure.Services;
 using Leopotam.Ecs;
 using Leopotam.Ecs.Ui.Systems;
+#if UNITY_EDITOR
 using Leopotam.Ecs.UnityIntegration;
+#endif
 using Services;
 using Services.Input;
 using UnityEngine;
@@ -122,7 +124,7 @@ namespace Core
         .Add(coreSystems)
 //			.Add(scoreSystems)
         .Add(movableSystems)
-        .OneFrame<OnCollisionEnterEvent>()
+        .OneFrame<OnWeaponTriggerEvent>()
         .OneFrame<OnEnemyTriggerEnter>()
         .OneFrame<OnTriggerEnterEvent>()
         .Inject(_sceneData)
@@ -237,11 +239,12 @@ namespace Core
     {
       return new EcsSystems(_world, name)
         .Add(new DestructibleCollisionCheckerSystem())
+        .Add(new PlayerDamageCollisionSystem())
         .Add(new HandleEnemyTriggerCollisionSystem())
         .Add(new UpdateAbilityCooldownSystem())
         .Add(new DestroyByTimerSystem())
-//			.OneFrame<DeadEvent>()
-        // .Add(new DestroyObjectsByCollisionSystem())
+        .Add(new HandlePlayerDamageSystem())
+        .Add(new DeathHandleSystem())
         ;
     }
   }

@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class RagdollWeapon : MonoBehaviour
+namespace Core.UnityComponents
 {
-    void Start()
+    public class RagdollWeapon : MonoBehaviour
     {
-        transform.SetParent(null);
-        Destroy(gameObject, 10f);
+        void Start()
+        {
+            transform.SetParent(null);
+            Destroy(gameObject, 10f);
+        }
     }
 }

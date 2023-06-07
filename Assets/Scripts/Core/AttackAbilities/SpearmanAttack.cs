@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using Core.Components.Events;
 using Core.UnityComponents.MonoLinks.Base;
 using Leopotam.Ecs;
@@ -15,6 +16,12 @@ namespace Core.AttackAbilities
     [SerializeField] private Rigidbody _rigidbody; 
     [SerializeField] private GameObject _weaponCollision;
     [SerializeField] private EnemyView _view;
+
+    public void Start()
+    {
+      _weaponCollision.SetActive(false);
+    }
+
     public override void DoAttack()
     {
       StartCoroutine(nameof(AttackCoroutine));
@@ -25,14 +32,14 @@ namespace Core.AttackAbilities
       _view.EnemyAnimator.PlayAttack();
       yield return new WaitForSeconds(AttackPrepareTime);
       _weaponCollision.SetActive(true);
-      for (int i = 0; i < 30; i++)
-      {
-        yield return new WaitForSeconds(AttackTime/30);
-        transform.position += transform.forward.normalized/3;
-      }
-      _entity.Entity.Del<AttackEvent>();
+      _view.EnemyAnimator.SetDash(true);
+      _rigidbody.velocity += transform.forward.normalized * 10;
+      yield return new WaitForSeconds(AttackTime);
       _weaponCollision.SetActive(false);
+      _view.EnemyAnimator.SetDash(false);
       _rigidbody.velocity = Vector3.zero;
+      yield return new WaitForSeconds(0.5f);
+      _entity.Entity.Del<AttackEvent>();
     }
   }
 }

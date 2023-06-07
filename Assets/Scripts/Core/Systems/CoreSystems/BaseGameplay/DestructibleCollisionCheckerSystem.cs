@@ -11,7 +11,7 @@ namespace Core.Systems.CoreSystems.BaseGameplay
 {
   public class DestructibleCollisionCheckerSystem : IEcsRunSystem
   {
-    private readonly EcsFilter<WeaponTag, OnCollisionEnterEvent> _filter = null;
+    private readonly EcsFilter<WeaponTag, OnWeaponTriggerEvent> _filter = null;
     private readonly EcsWorld _world = null;
 
     public void Run()
@@ -21,10 +21,10 @@ namespace Core.Systems.CoreSystems.BaseGameplay
       foreach (var index in _filter)
       {
         ref var entity = ref _filter.GetEntity(index);
-        var onCollisionEnterEvent = entity.Get<OnCollisionEnterEvent>();
+        var onCollisionEnterEvent = entity.Get<OnWeaponTriggerEvent>();
 
         var collisionGameObject = onCollisionEnterEvent.Collision.gameObject;
-        var destructible = collisionGameObject.GetComponent<MonoEntity>();
+        var destructible = collisionGameObject.GetComponentInParent<MonoEntity>();
         if (destructible == null || !destructible.Entity.Has<DestructibleTag>())
           continue;
         var weaponTransform = entity.Get<GameObjectLink>().Value.transform;

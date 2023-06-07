@@ -270,5 +270,5 @@ namespace LevelEditor
       ButtonSelectAction?.Invoke(this);
     }
   }
-#endif
 }
+#endif

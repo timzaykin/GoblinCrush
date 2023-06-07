@@ -12,13 +12,14 @@ GameObject:
   - component: {fileID: 4739028350642558369}
   - component: {fileID: 4739028350642558370}
   - component: {fileID: 4739028350642558371}
-  m_Layer: 0
+  - component: {fileID: 7099999405248990479}
+  m_Layer: 7
   m_Name: WeaponCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4739028350642558372
 Transform:
   m_ObjectHideFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4739028350642558373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.975, y: -0.033, z: 0.053}
+  m_LocalPosition: {x: -0.9897, y: -0.0042, z: -0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42,7 +43,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4739028350642558373}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.15
@@ -69,6 +70,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8a7b9209040d459eba8e07841f9628fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7099999405248990479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4739028350642558373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e804687624c24fdc88ec247687a08b9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4739028351922008865
@@ -128,7 +141,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.7
+  m_Radius: 0.46
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 1.5, z: 0}
@@ -348,6 +361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WK_Spearman_A
       objectReference: {fileID: 0}
+    - target: {fileID: 1632868360562362140, guid: 6771171478365174f8173e21593153b0, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1632868360562465660, guid: 6771171478365174f8173e21593153b0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -420,6 +437,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1632868360562465660, guid: 6771171478365174f8173e21593153b0, type: 3}
   m_PrefabInstance: {fileID: 4739028350761449593}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &6299819213333692261 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1632868360562362140, guid: 6771171478365174f8173e21593153b0, type: 3}
+  m_PrefabInstance: {fileID: 4739028350761449593}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3681868407991815748
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6299819213333692261}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.49119514, y: 1.202323, z: 0.31644556}
+  m_Center: {x: -0.0141859045, y: 0.85731447, z: -0.07818095}
 --- !u!4 &8964850168609816437 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4444457542083577612, guid: 6771171478365174f8173e21593153b0, type: 3}
