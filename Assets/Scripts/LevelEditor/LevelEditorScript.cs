@@ -22,6 +22,8 @@ namespace LevelEditor
     [TableList(ShowPaging = true, DrawScrollView = true)]
     public List<EditorPrefab> Prefabs = new List<EditorPrefab>();
 
+    public bool SetDynamicObjects;
+    
     private List<GameObject> _spawnedObjects = new List<GameObject>();
     private Dictionary<GameObject, string> _pathDictionary = new Dictionary<GameObject,string>();
     private static EditorPrefab _selectedPrefab;
@@ -88,7 +90,7 @@ namespace LevelEditor
     [Button, FoldoutGroup("Tools")]
     public void RefreshSpawnedObjects()
     {
-      var rootGameObject = GameObject.Find("LevelRoot");
+      var rootGameObject = GameObject.Find("DynamicObjects");
       var childObjects = rootGameObject.GetComponentsInChildren<Transform>();
       _spawnedObjects = new List<GameObject>();
       foreach (var childObject in childObjects)
@@ -143,8 +145,9 @@ namespace LevelEditor
 
     private void InstantiatePrefab(GameObject prefab, string path)
     {
-      var rootGameObject = GameObject.Find("LevelRoot");
-      var go = Instantiate(prefab,transform.position,transform.rotation, rootGameObject.transform);
+      var rootGameObject = GameObject.Find(SetDynamicObjects?"DynamicObjects":"LevelRoot");
+      var go = Instantiate(prefab,transform.position,transform.rotation,  rootGameObject.transform);
+      if (!SetDynamicObjects) return;
       _spawnedObjects.Add(go);
       _pathDictionary.Add(go, path);
     }

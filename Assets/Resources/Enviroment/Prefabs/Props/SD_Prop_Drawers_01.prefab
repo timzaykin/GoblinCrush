@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2304212}
   - component: {fileID: 3691330832406258581}
   - component: {fileID: 936309097529821905}
+  - component: {fileID: -7260782220122330977}
   m_Layer: 0
   m_Name: SD_Prop_Drawers_01
   m_TagString: Untagged
@@ -114,3 +115,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7576599, y: 1.3397588, z: 0.7616806}
   m_Center: {x: 0, y: 0.6698794, z: 0}
+--- !u!208 &-7260782220122330977
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197322}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.379, y: 0.67, z: 0.381}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.67, z: 0}
+  m_TimeToStationary: 0.5

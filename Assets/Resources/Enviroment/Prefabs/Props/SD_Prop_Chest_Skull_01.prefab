@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2388688}
   - component: {fileID: -8026544186667873535}
   - component: {fileID: 7326030662446639402}
+  - component: {fileID: 9083203157717457097}
   m_Layer: 0
   m_Name: SD_Prop_Chest_Skull_01
   m_TagString: Untagged
@@ -115,6 +116,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.8082676, y: 1.6164765, z: 1.5335894}
   m_Center: {x: 0.0000009536743, y: 0.80823827, z: -0.02671671}
+--- !u!208 &9083203157717457097
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104968}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.404, y: 0.808, z: 0.767}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.808, z: -0.027}
+  m_TimeToStationary: 0.5
 --- !u!1 &105534
 GameObject:
   m_ObjectHideFlags: 0

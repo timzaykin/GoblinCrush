@@ -40,7 +40,7 @@ namespace Infrastructure.States
       _levelName = sceneName;
       _curtain.Show();
       _gameFactory.Cleanup();
-      _sceneLoader.Load("Main", OnLoaded);
+      _sceneLoader.Load(_levelName, OnLoaded);
     }
 
     public void Exit()

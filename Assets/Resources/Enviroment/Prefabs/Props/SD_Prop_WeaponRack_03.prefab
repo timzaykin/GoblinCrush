@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3387528}
   - component: {fileID: 2310662}
   - component: {fileID: 1820521162982242294}
+  - component: {fileID: 8611393214756043470}
   m_Layer: 0
   m_Name: SD_Prop_WeaponRack_03
   m_TagString: Untagged
@@ -98,3 +99,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9de2e49457ac8474385462d841d89ded, type: 3}
+--- !u!208 &8611393214756043470
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135984}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.6660001, y: 1.5180001, z: 0.33100003}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.5180001, z: -0.013}
+  m_TimeToStationary: 0.5

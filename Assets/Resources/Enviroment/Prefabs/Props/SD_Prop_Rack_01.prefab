@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2346832}
   - component: {fileID: -7127002478578771672}
   - component: {fileID: 1743529064633117497}
+  - component: {fileID: -4368232190501048412}
   m_Layer: 0
   m_Name: SD_Prop_Rack_01
   m_TagString: Untagged
@@ -116,6 +117,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.7926764, y: 1.2556634, z: 2.4541225}
   m_Center: {x: 0, y: 0.6278317, z: 0.0000009536743}
+--- !u!208 &-4368232190501048412
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 144226}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 2.8960001, y: 0.85200006, z: 1.2270001}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.85200006, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &153484
 GameObject:
   m_ObjectHideFlags: 0

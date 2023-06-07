@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 2339334}
   - component: {fileID: 2449978888191563356}
   - component: {fileID: 5768327454935301519}
+  - component: {fileID: -8553423033070511622}
   m_Layer: 0
   m_Name: SD_Prop_Chest_03
   m_TagString: Untagged
@@ -214,6 +215,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 00fadbbc52faaba46bfb523ad3b0727d, type: 3}
+--- !u!208 &-8553423033070511622
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139338}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.046, y: 0.29000002, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.29000002, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &164590
 GameObject:
   m_ObjectHideFlags: 0

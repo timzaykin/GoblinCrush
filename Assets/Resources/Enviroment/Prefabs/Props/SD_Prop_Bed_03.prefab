@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2359058}
   - component: {fileID: 743135289787577093}
   - component: {fileID: 2199616873320224506}
+  - component: {fileID: 2935373269350678449}
   m_Layer: 0
   m_Name: SD_Prop_Bed_03
   m_TagString: Untagged
@@ -114,3 +115,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.3522105, y: 2.551981, z: 1.5196624}
   m_Center: {x: 0, y: 1.2759905, z: -0.00000023841858}
+--- !u!208 &2935373269350678449
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153764}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.6760001, y: 1.276, z: 0.76000005}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 1.276, z: 0}
+  m_TimeToStationary: 0.5

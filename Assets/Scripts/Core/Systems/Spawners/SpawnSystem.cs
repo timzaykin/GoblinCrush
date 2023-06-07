@@ -34,7 +34,6 @@ namespace Core.Systems.Spawners
         _factory.Spawn(spawnPrefabData);
         spawnEntity.Del<SpawnPrefab>();
       }
-      Object.FindObjectOfType<NavMeshSurfaceUpdater>().UpdateNavMesh();
     }
 
     public void Run()
