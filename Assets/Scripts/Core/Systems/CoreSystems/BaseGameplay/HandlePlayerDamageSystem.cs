@@ -1,6 +1,7 @@
 ﻿using Core.Components.Core;
 using Core.Components.Events;
 using Core.Components.GameStates.GameplayEvents;
+using Core.UnityComponents.UI;
 using Leopotam.Ecs;
 using UnityEngine;
 
@@ -8,6 +9,7 @@ namespace Core.Systems.CoreSystems.BaseGameplay
 {
   public class HandlePlayerDamageSystem : IEcsRunSystem
   {
+    private readonly GameHUD _gameHUD;
     private readonly EcsFilter<PlayerHealth, DamageEvent> _filter = null;
     
     public void Run()
@@ -19,13 +21,14 @@ namespace Core.Systems.CoreSystems.BaseGameplay
         ref var entity = ref _filter.GetEntity(index);
         ref var health =ref _filter.Get1(index);
         health.Count -= 1;
-        Debug.Log("Current health: "+health.Count);
         entity.Del<DamageEvent>();
         if (health.Count <= 0)
         {
           entity.Get<DeadEvent>();
-          Debug.Log("Player death");
+          _gameHUD.HealthBar.SetHealthPointsCount(0);
+          continue;
         }
+        _gameHUD.HealthBar.SetHealthPointsCount(health.Count);
       }
     }
   }

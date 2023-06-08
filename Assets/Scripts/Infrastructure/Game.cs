@@ -13,7 +13,7 @@ namespace Infrastructure
 
     public Game(ICoroutineRunner coroutineRunner, StaticData staticData, LoadingCurtain curtain)
     {
-      Application.targetFrameRate = 60; 
+      //Application.targetFrameRate = 60; 
       StateMachine = new GameStateMachine(new SceneLoader(coroutineRunner), curtain,staticData, AllServices.Container);
       
     }

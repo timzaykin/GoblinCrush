@@ -11,6 +11,7 @@ namespace Core.Systems.CoreSystems.BaseGameplay
 {
   public class EnemyFollowAndAttackSystem : IEcsRunSystem
   {
+    private EcsWorld _world = null;
     private EcsFilter<AttackTarget, AttackAbility>.Exclude<AttackEvent> _filter;
 
     public void Run()
@@ -46,9 +47,6 @@ namespace Core.Systems.CoreSystems.BaseGameplay
       navMesh.Value.SetDestination(position);
       navMesh.Value.speed = navMesh.UnitSpeed;
       SetToTargetDirection(currentTarget.transform, currentTransform);
-      view.EnemyAnimator.PlayWalk(true);
-
-      
     }
     
     private static void SetToTargetDirection(Transform currentTarget, Transform currentTransform)
@@ -64,13 +62,12 @@ namespace Core.Systems.CoreSystems.BaseGameplay
 
       navMesh.Value.SetDestination(currentTransform.position);
       navMesh.Value.speed = 0;
-      view.EnemyAnimator.PlayWalk(false);
       SetToTargetDirection(currentTarget.transform, currentTransform);
       if (attackAbility.AttackCooldown <= attackAbility.LastAttackTime)
       {
         entity.Get<AttackEvent>();
         attackAbility.LastAttackTime = 0;
-        attackAbility.Ability.DoAttack();
+        attackAbility.Ability.DoAttack(currentTarget.transform,ref _world);
       }
     }
   }

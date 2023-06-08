@@ -1,4 +1,5 @@
 ﻿using Core;
+using Core.UnityComponents.UI;
 using Data;
 using Infrastructure.AssetManagement;
 using Infrastructure.Factory;
@@ -65,8 +66,8 @@ namespace Infrastructure.States
     private void InitGameWorld()
     {
       var levelData = LoadLevelData();
-      _gameFactory.CreateHud();
-      InitializeEcs(levelData, _gameFactory);
+      var hud = _gameFactory.CreateHud();
+      InitializeEcs(levelData,hud, _gameFactory);
     }
 
     private LevelData LoadLevelData()
@@ -77,9 +78,10 @@ namespace Infrastructure.States
     }
 
 
-    private void InitializeEcs(LevelData levelData, IGameFactory gameFactory)
+    private void InitializeEcs(LevelData levelData, GameObject hudGo, IGameFactory gameFactory)
     {
-      Object.FindObjectOfType<EcsStartup>()?.Initialize(levelData, gameFactory,()=> EnterGameLoop(levelData),
+      
+      Object.FindObjectOfType<EcsStartup>()?.Initialize(levelData, gameFactory, hudGo.GetComponent<GameHUD>(),()=> EnterGameLoop(levelData),
         () =>
         {
           _gameStateMachine.Enter<LoadLevelState, string>(_progressService.Progress.WorldData.LevelName);

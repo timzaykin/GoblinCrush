@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Spearman
   m_EditorClassIdentifier: 
   EnemyId: Spearman
-  PrefabPath: Prefabs/Enemy
+  PrefabPath: Prefabs/EnemySpearman

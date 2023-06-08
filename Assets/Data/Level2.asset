@@ -1613,7 +1613,7 @@ MonoBehaviour:
       Data: 
     - Name: EnemyId
       Entry: 1
-      Data: Spearman
+      Data: Archer
     - Name: 
       Entry: 8
       Data: 
@@ -1637,7 +1637,7 @@ MonoBehaviour:
       Data: 
     - Name: EnemyId
       Entry: 1
-      Data: Spearman
+      Data: Archer
     - Name: 
       Entry: 8
       Data: 
@@ -1661,7 +1661,7 @@ MonoBehaviour:
       Data: 
     - Name: EnemyId
       Entry: 1
-      Data: Spearman
+      Data: Archer
     - Name: 
       Entry: 8
       Data: 

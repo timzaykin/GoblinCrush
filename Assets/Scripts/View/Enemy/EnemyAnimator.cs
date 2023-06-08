@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.AI;
 using View.Logic;
 
 namespace View.Enemy
@@ -18,7 +19,17 @@ namespace View.Enemy
 
     public AnimatorState State { get; private set; }
 
+    private NavMeshAgent _navMesh;
+    
+    public void Start()
+    {
+      _navMesh = GetComponent<NavMeshAgent>();
+    }
 
+    private void Update()
+    {
+      Animator.SetFloat(MoveHash,_navMesh.velocity.magnitude /5, 0.1f, Time.deltaTime);
+    }
 
     public void EnteredState(int stateHash)
     {

@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using Core.Components.Events;
 using Core.UnityComponents.MonoLinks.Base;
 using Leopotam.Ecs;
 using UnityEngine;
+using UnityEngine.AI;
 using View.Enemy;
 
 namespace Core.AttackAbilities
@@ -13,7 +13,7 @@ namespace Core.AttackAbilities
     private const float AttackPrepareTime = 1.1f;
     private const float AttackTime = 0.75f;
     [SerializeField] private MonoEntity _entity;
-    [SerializeField] private Rigidbody _rigidbody; 
+    [SerializeField] private NavMeshAgent _navMesh; 
     [SerializeField] private GameObject _weaponCollision;
     [SerializeField] private EnemyView _view;
 
@@ -22,22 +22,23 @@ namespace Core.AttackAbilities
       _weaponCollision.SetActive(false);
     }
 
-    public override void DoAttack()
+    public override void DoAttack(Transform targetTransform,ref EcsWorld world)
     {
-      StartCoroutine(nameof(AttackCoroutine));
+      StartCoroutine(AttackCoroutine(targetTransform));
     }
 
-    private IEnumerator AttackCoroutine()
+    private IEnumerator AttackCoroutine(Transform targetTransform)
     {
       _view.EnemyAnimator.PlayAttack();
       yield return new WaitForSeconds(AttackPrepareTime);
       _weaponCollision.SetActive(true);
-      _view.EnemyAnimator.SetDash(true);
-      _rigidbody.velocity += transform.forward.normalized * 10;
+      var dashPoint = targetTransform.position +((targetTransform.position - transform.position).normalized*3);
+      Debug.DrawLine(dashPoint, Vector3.up);
+      _navMesh.SetDestination(dashPoint);
+      _navMesh.speed = 15f;
       yield return new WaitForSeconds(AttackTime);
       _weaponCollision.SetActive(false);
-      _view.EnemyAnimator.SetDash(false);
-      _rigidbody.velocity = Vector3.zero;
+      _navMesh.speed = 0;
       yield return new WaitForSeconds(0.5f);
       _entity.Entity.Del<AttackEvent>();
     }

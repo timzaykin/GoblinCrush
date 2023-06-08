@@ -7,6 +7,7 @@ using Core.Systems.CoreSystems.BaseGameplay;
 using Core.Systems.InputSystems;
 using Core.Systems.MoveSystems;
 using Core.Systems.Spawners;
+using Core.UnityComponents.UI;
 using Data;
 using Infrastructure.Factory;
 using Infrastructure.Services;
@@ -40,6 +41,7 @@ namespace Core
     private PauseService _pauseService;
     private ScoreService _scoreService;
     private ChangeLevelService _changeLevelService;
+    private GameHUD _gameHUD;
 
     private int _spawnSystems;
 
@@ -51,7 +53,7 @@ namespace Core
     private Action _exitGameLoopStateAction;
     
     
-    public void Initialize(LevelData levelData, IGameFactory gameFactory, Action enterGameLoopStateAction, Action exitGameLoopStateAction)
+    public void Initialize(LevelData levelData, IGameFactory gameFactory,GameHUD hud,  Action enterGameLoopStateAction, Action exitGameLoopStateAction)
     {
       _exitGameLoopStateAction = exitGameLoopStateAction;
       _world = new EcsWorld();
@@ -60,7 +62,8 @@ namespace Core
 
       _levelData = levelData;
       _gameFactory = gameFactory;
-
+      _gameHUD = hud;
+      _gameHUD.Init(exitGameLoopStateAction, _sceneData);
 
       InitializedServices();
       InitializeObserver();
@@ -120,6 +123,7 @@ namespace Core
         .Inject(_scoreService)
         .Inject(_changeLevelService)
         .Inject(_inputService)
+        .Inject(_gameHUD)
         .Init();
     }
 
@@ -143,6 +147,7 @@ namespace Core
         .Inject(_scoreService)
         .Inject(_changeLevelService)
         .Inject(_inputService)
+        .Inject(_gameHUD)
         .Init();
     }
 
@@ -241,6 +246,7 @@ namespace Core
     {
       return new EcsSystems(_world, name)
         .Add(new MoveSystem())
+        .Add(new UpdateProjectileMove())
         .Add(new EnemyFollowAndAttackSystem())
         .Add(new UpdateCharacterPosition())
         .Add(new SlowdownSystem());

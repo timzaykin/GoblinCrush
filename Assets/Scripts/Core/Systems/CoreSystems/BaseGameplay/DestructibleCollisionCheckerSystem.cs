@@ -24,6 +24,7 @@ namespace Core.Systems.CoreSystems.BaseGameplay
         var onCollisionEnterEvent = entity.Get<OnWeaponTriggerEvent>();
 
         var collisionGameObject = onCollisionEnterEvent.Collision.gameObject;
+        if(collisionGameObject == null) continue;
         var destructible = collisionGameObject.GetComponentInParent<MonoEntity>();
         if (destructible == null || !destructible.Entity.Has<DestructibleTag>())
           continue;

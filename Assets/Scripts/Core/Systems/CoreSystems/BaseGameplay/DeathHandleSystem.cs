@@ -1,13 +1,16 @@
 ﻿using Core.Components.GameStates.GameplayEvents;
 using Core.Components.Objects;
+using Core.UnityComponents.UI;
 using Leopotam.Ecs;
 using Services;
+using UnityEngine;
 using View.Hero;
 
 namespace Core.Systems.CoreSystems.BaseGameplay
 {
   public class DeathHandleSystem : IEcsRunSystem
   {
+    private GameHUD _gameHUD;
     private PauseService _pauseService = null;
     private readonly EcsFilter<DeadEvent> _filter = null;
     
@@ -22,6 +25,7 @@ namespace Core.Systems.CoreSystems.BaseGameplay
         animator.PlayDeath();
         entity.Del<DeadEvent>();
         _pauseService.SetPause();
+        _gameHUD.ShowHideGameOverPanel(true);
       }
     }
   }

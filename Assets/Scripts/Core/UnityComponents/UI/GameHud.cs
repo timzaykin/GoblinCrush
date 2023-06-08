@@ -1,43 +1,33 @@
-using TMPro;
+using System;
+using Data;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Core.UnityComponents.UI
 {
-  public class GameHud : MonoBehaviour
+  public class GameHUD : MonoBehaviour
   {
-    private const string SceneName = "SampleScene";
-    public string FormatScore = "Score: {0}";
-    public GameObject GameOver;
-    public TMP_Text Score;
-    public GameObject StartGame;
+    [SerializeField] private HealthBar _healthBar;
+    [SerializeField] private GameOverPanel _gameOverPanel;
+  
 
-    public void Awake()
+    public HealthBar HealthBar => _healthBar;
+    public GameOverPanel GameOverPanel => _gameOverPanel;
+
+    public void Init(Action restartLevelAction, SceneData sceneData)
     {
-      StartGame.SetActive(true);
-      GameOver.SetActive(false);
-      Score.gameObject.SetActive(false);
+      _gameOverPanel.RestartLevelButton.onClick.AddListener(()=>
+      {
+        sceneData.Factory.CleanUp();
+        restartLevelAction?.Invoke();
+        ShowHideGameOverPanel(false);
+      });
+      ShowHideGameOverPanel(false);
     }
 
-    public void OnStartGameClick()
+    public void ShowHideGameOverPanel(bool isShow)
     {
-      StartGame.SetActive(false);
-      Score.gameObject.SetActive(true);
+      GameOverPanel.gameObject.SetActive(isShow);
     }
 
-    public void ShowGameOver()
-    {
-      GameOver.SetActive(true);
-    }
-
-    public void OnNewGameClick()
-    {
-      SceneManager.LoadScene(SceneName);
-    }
-
-    public void SetScore(int value)
-    {
-      Score.text = string.Format(FormatScore, value);
-    }
   }
 }

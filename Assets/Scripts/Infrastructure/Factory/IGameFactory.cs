@@ -10,7 +10,7 @@ namespace Infrastructure.Factory
     List<ISavedProgressReader> ProgressReaders { get; }
     List<ISavedProgress> ProgressWriters { get; }
     GameObject CreateObject(string path, Vector3 at, Quaternion rotation = default, Transform parent = null);
-    void CreateHud();
+    GameObject CreateHud();
     void Cleanup();
   }
 }
