@@ -74,6 +74,7 @@ MonoBehaviour:
   _layerMask:
     serializedVersion: 2
     m_Bits: 128
+  _hitVfxPrefab: Vfx/ArrowHit
 --- !u!1 &6269621531758396621
 GameObject:
   m_ObjectHideFlags: 0

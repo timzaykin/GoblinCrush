@@ -4,6 +4,7 @@ using Core.Components.Common;
 using Core.Components.Common.MonoLinks;
 using Leopotam.Ecs;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Core.UnityComponents.DestructibleBehaviours
 {
@@ -15,6 +16,12 @@ namespace Core.UnityComponents.DestructibleBehaviours
     public override void Destruct(EcsWorld world, EcsEntity entity, Vector3 weaponTransform)
     {
       entity.Destroy();
+      world.NewEntity().Get<SpawnVfx>() = new SpawnVfx()
+      {
+        Position = _ragdollSpawnPosition.position+Vector3.up,
+        Rotation = Quaternion.identity
+      };
+
       world.NewEntity().Get<SpawnPrefab>() = new SpawnPrefab
       {
         PrefabPath = _ragdollPrefab,

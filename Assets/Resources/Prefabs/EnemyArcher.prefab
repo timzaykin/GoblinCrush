@@ -1369,6 +1369,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ragdollPrefab: Prefabs/ArcherRagdoll
   _ragdollSpawnPosition: {fileID: 4739028351922008875}
+  _hitLayerMask:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &8289634740531876517
 MonoBehaviour:
   m_ObjectHideFlags: 0

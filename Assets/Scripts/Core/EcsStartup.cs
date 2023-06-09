@@ -231,7 +231,8 @@ namespace Core
         .Add(new SpawnSceneObjects())
         .Add(new SpawnEnemyObjects())
         .Add(new SpawnLevelEnterSystem())
-        .Add(new SpawnSystem());
+        .Add(new SpawnSystem())
+        .Add(new SpawnVfxSystem());
       ;
     }
 
@@ -259,6 +260,7 @@ namespace Core
         .Add(new PlayerDamageCollisionSystem())
         .Add(new HandleEnemyTriggerCollisionSystem())
         .Add(new UpdateAbilityCooldownSystem())
+        .Add(new VfxLiveHandleSystem())
         .Add(new DestroyByTimerSystem())
         .Add(new HandlePlayerDamageSystem())
         .Add(new CheckEnemyCountSystem())

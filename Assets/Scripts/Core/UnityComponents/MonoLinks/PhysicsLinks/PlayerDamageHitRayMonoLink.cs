@@ -1,4 +1,5 @@
-﻿using Core.Components.PhysicsEvents;
+﻿using Core.Components.Common;
+using Core.Components.PhysicsEvents;
 using Core.UnityComponents.MonoLinks.Base;
 using Leopotam.Ecs;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace Core.UnityComponents.MonoLinks.PhysicsLinks
   {
 
     [SerializeField]private LayerMask _layerMask;
+    [SerializeField] private string _hitVfxPrefab;
     public void FixedUpdate()
     {
       RaycastHit hit;
@@ -20,7 +22,14 @@ namespace Core.UnityComponents.MonoLinks.PhysicsLinks
           Collision = hit.collider,
           Sender = gameObject
         };
-        enabled = false;
+
+        _entity.Get<SpawnVfx>() = new SpawnVfx()
+        {
+          PrefabPath = _hitVfxPrefab,
+          Position = hit.point,
+          Rotation = Quaternion.identity
+        };
+        gameObject.SetActive(false);
       }
     }
   }

@@ -1,4 +1,5 @@
 using System.Linq;
+using Common;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -8,12 +9,9 @@ namespace Data
   public class StaticData : ScriptableObject
   {
     public Vector3 CameraOffset;
-    public float ClampVelocity = 0.2f;
-    public Vector3 GlobalGravitation;
-    public Vector3 PlayerAddForce;
     public LevelData[] Levels;
     public EnemyData[] Enemies;
-    public float SpawnTimer;
+    public string[] RandomHitVfxData;
 
     public LevelData GetLevelByName(string levelName)
     {
@@ -23,6 +21,11 @@ namespace Data
     public EnemyData GetEnemyById(string enemyId)
     {
       return Enemies.FirstOrDefault(x => x.EnemyId == enemyId);
+    }
+
+    public string GetRandomHitVfx()
+    {
+      return RandomHitVfxData.GetRandom();
     }
   }
 }

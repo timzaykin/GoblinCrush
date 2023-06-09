@@ -35,5 +35,7 @@ namespace Core.Systems.MoveSystems
         data.LiveTime += Time.deltaTime*data.ProjectileSpeed;
       }
     }
+
+    
   }
 }

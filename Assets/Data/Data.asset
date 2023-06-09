@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   CameraOffset: {x: 0, y: 15, z: -10}
-  ClampVelocity: 0.2
-  GlobalGravitation: {x: 0, y: 0, z: 0}
-  PlayerAddForce: {x: 0, y: 0, z: 0}
   Levels:
   - {fileID: 11400000, guid: c5edf1cff17dfd74cb97656c1ee9a37c, type: 2}
   - {fileID: 11400000, guid: ab9de62918b20314eb805a02a72aeb3c, type: 2}
   Enemies:
   - {fileID: 11400000, guid: 546b70e54214d1a499e0bdfe1042a134, type: 2}
   - {fileID: 11400000, guid: 20615aa06be7ebf4e9c9586ed0689475, type: 2}
-  SpawnTimer: 0
+  - {fileID: 11400000, guid: 6eb361cdad8dcd5459c3b8da0967cb17, type: 2}
+  - {fileID: 11400000, guid: 3078581f5ac3fe1498e122066fb12b95, type: 2}
+  RandomHitVfxData:
+  - Vfx/SmashHit
+  - Vfx/WhamHit
