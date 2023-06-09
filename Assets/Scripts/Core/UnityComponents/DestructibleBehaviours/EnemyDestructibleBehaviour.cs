@@ -2,6 +2,8 @@
 using System.Collections;
 using Core.Components.Common;
 using Core.Components.Common.MonoLinks;
+using Infrastructure.Services;
+using Infrastructure.Services.AudioService;
 using Leopotam.Ecs;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -21,7 +23,7 @@ namespace Core.UnityComponents.DestructibleBehaviours
         Position = _ragdollSpawnPosition.position+Vector3.up,
         Rotation = Quaternion.identity
       };
-
+      AllServices.Container.Single<IAudioService>().GetSoundSystem().PlayEffectClip("Shmak", true);
       world.NewEntity().Get<SpawnPrefab>() = new SpawnPrefab
       {
         PrefabPath = _ragdollPrefab,

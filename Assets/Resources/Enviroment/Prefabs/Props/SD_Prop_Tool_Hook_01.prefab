@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2301754}
   - component: {fileID: -4134754994231266500}
   - component: {fileID: 2406371453880528899}
+  - component: {fileID: -7139903460092226521}
   m_Layer: 0
   m_Name: SD_Prop_Tool_Hook_01
   m_TagString: Untagged
@@ -115,3 +116,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 91f3efa6cefe81140b581824847c5483, type: 3}
+--- !u!114 &-7139903460092226521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2111f9c85dd65ec44aeeaa5cd5fbb4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundName: Hit2

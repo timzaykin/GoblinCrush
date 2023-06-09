@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2305738}
   - component: {fileID: 1176321164621668542}
   - component: {fileID: -83430128206678380}
+  - component: {fileID: 4822948379078225957}
   m_Layer: 0
   m_Name: SD_Prop_Winerack_01
   m_TagString: Untagged
@@ -115,3 +116,16 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 1.8320001, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &4822948379078225957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2111f9c85dd65ec44aeeaa5cd5fbb4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundName: Hit3

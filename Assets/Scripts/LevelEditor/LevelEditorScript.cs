@@ -68,6 +68,7 @@ namespace LevelEditor
         var enemyObject = new EnemyObject()
         {
           Position = point.transform.position,
+          Rotation = point.transform.rotation,
           EnemyId = point.EnemyId,
         };
         spawnPoints.Add(enemyObject);

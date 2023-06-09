@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2313230}
   - component: {fileID: -5227962811735109848}
   - component: {fileID: -8625155241830838269}
+  - component: {fileID: -8332871508384831285}
   m_Layer: 0
   m_Name: SD_Prop_Treasure_Goblet_01
   m_TagString: Untagged
@@ -115,3 +116,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: c25fde9ae51e2124482d32586d01a562, type: 3}
+--- !u!114 &-8332871508384831285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2111f9c85dd65ec44aeeaa5cd5fbb4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundName: Hit1

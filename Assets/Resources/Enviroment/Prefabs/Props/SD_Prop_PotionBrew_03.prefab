@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2359360}
   - component: {fileID: -1257737900550367920}
   - component: {fileID: -3240525109958123600}
+  - component: {fileID: -7286591920969319337}
   m_Layer: 0
   m_Name: SD_Prop_PotionBrew_03
   m_TagString: Untagged
@@ -115,3 +116,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5ccddafde04183f43a268ee522662f82, type: 3}
+--- !u!114 &-7286591920969319337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2111f9c85dd65ec44aeeaa5cd5fbb4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundName: Hit1

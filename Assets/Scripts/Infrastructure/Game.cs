@@ -11,10 +11,11 @@ namespace Infrastructure
     public LevelData LevelData;
     public GameStateMachine StateMachine;
 
-    public Game(ICoroutineRunner coroutineRunner, StaticData staticData, LoadingCurtain curtain)
+    public Game(ICoroutineRunner coroutineRunner, StaticData staticData, SoundSystem soundSystem,
+      LoadingCurtain curtain)
     {
       //Application.targetFrameRate = 60; 
-      StateMachine = new GameStateMachine(new SceneLoader(coroutineRunner), curtain,staticData, AllServices.Container);
+      StateMachine = new GameStateMachine(new SceneLoader(coroutineRunner), curtain, staticData,soundSystem, AllServices.Container);
       
     }
   }

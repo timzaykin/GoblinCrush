@@ -1,4 +1,6 @@
 using System;
+using Infrastructure.Services;
+using Infrastructure.Services.AudioService;
 using UnityEngine;
 using View.Logic;
 
@@ -7,7 +9,7 @@ namespace View.Hero
   public class HeroAnimator : MonoBehaviour, IAnimationStateReader
   {
     private static readonly int MoveHash = Animator.StringToHash("Walking");
-    private static readonly int AttackHash = Animator.StringToHash("AttackNormal");
+    private static readonly int AttackHash = Animator.StringToHash("Attack");
     private static readonly int HitHash = Animator.StringToHash("Hit");
     private static readonly int DieHash = Animator.StringToHash("Die");
     private readonly int _attackStateHash = Animator.StringToHash("Attack Normal");
@@ -45,8 +47,8 @@ namespace View.Hero
     public void PlayHit() => 
       Animator.SetTrigger(HitHash);
 
-    public void PlayAttack() => 
-      Animator.SetTrigger(AttackHash);
+    public void PlayAttack(bool val) => 
+      Animator.SetBool(AttackHash, val);
 
     public void PlayDeath() => 
       Animator.SetTrigger(DieHash);

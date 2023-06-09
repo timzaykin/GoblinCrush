@@ -2,6 +2,8 @@
 using Core.Components.Objects.Tags;
 using Core.Components.PhysicsEvents;
 using Core.UnityComponents.MonoLinks.Base;
+using Infrastructure.Services;
+using Infrastructure.Services.AudioService;
 using Leopotam.Ecs;
 
 namespace Core.Systems.CoreSystems.BaseGameplay
@@ -24,6 +26,7 @@ namespace Core.Systems.CoreSystems.BaseGameplay
         if (playerEntity == null || !playerEntity.Entity.Has<PlayerTag>())
           continue;
         playerEntity.Entity.Get<DamageEvent>();
+        AllServices.Container.Single<IAudioService>().GetSoundSystem().PlayEffectClip("Shmak", true);
       }
     }
   }

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using Core.Components.Events;
 using Core.UnityComponents.MonoLinks.Base;
+using Infrastructure.Services;
+using Infrastructure.Services.AudioService;
 using Leopotam.Ecs;
 using UnityEngine;
 using UnityEngine.AI;
@@ -10,8 +12,8 @@ namespace Core.AttackAbilities
 {
   public class SpearmanAttack : AttackAbilityBase
   {
-    private const float AttackPrepareTime = 1.1f;
-    private const float AttackTime = 0.75f;
+    [SerializeField] private float AttackPrepareTime = 1.1f;
+    [SerializeField] private float AttackTime = 0.75f;
     [SerializeField] private MonoEntity _entity;
     [SerializeField] private NavMeshAgent _navMesh; 
     [SerializeField] private GameObject _weaponCollision;
@@ -32,8 +34,8 @@ namespace Core.AttackAbilities
       _view.EnemyAnimator.PlayAttack();
       yield return new WaitForSeconds(AttackPrepareTime);
       _weaponCollision.SetActive(true);
+      AllServices.Container.Single<IAudioService>().GetSoundSystem().PlayEffectClip("Attack", true);
       var dashPoint = targetTransform.position +((targetTransform.position - transform.position).normalized*3);
-      Debug.DrawLine(dashPoint, Vector3.up);
       _navMesh.SetDestination(dashPoint);
       _navMesh.speed = 15f;
       yield return new WaitForSeconds(AttackTime);

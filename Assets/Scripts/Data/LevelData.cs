@@ -15,6 +15,7 @@ namespace Data
     public LevelObject[] LevelObjects;
     public EnemyObject[] EnemyObjects;
     public LevelObject LevelEnterObject;
+    public string EnvironmentTrack;
   }
   
   public struct LevelObject
@@ -27,6 +28,7 @@ namespace Data
   public struct EnemyObject
   {
     public Vector3 Position;
+    public Quaternion Rotation;
     public string EnemyId;
   }
 }

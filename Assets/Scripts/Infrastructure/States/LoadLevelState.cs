@@ -3,6 +3,8 @@ using Core.UnityComponents.UI;
 using Data;
 using Infrastructure.AssetManagement;
 using Infrastructure.Factory;
+using Infrastructure.Services;
+using Infrastructure.Services.AudioService;
 using Infrastructure.Services.GameData;
 using Infrastructure.Services.PersistentProgress;
 using UnityEngine;
@@ -67,6 +69,7 @@ namespace Infrastructure.States
     {
       var levelData = LoadLevelData();
       var hud = _gameFactory.CreateHud();
+      AllServices.Container.Single<IAudioService>().GetSoundSystem().PlayMusic(levelData.EnvironmentTrack);
       InitializeEcs(levelData,hud, _gameFactory);
     }
 

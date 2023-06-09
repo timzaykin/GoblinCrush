@@ -1,6 +1,8 @@
 ﻿using Core.Components.Common;
 using Core.Components.PhysicsEvents;
 using Core.UnityComponents.MonoLinks.Base;
+using Infrastructure.Services;
+using Infrastructure.Services.AudioService;
 using Leopotam.Ecs;
 using UnityEngine;
 
@@ -11,6 +13,7 @@ namespace Core.UnityComponents.MonoLinks.PhysicsLinks
 
     [SerializeField]private LayerMask _layerMask;
     [SerializeField] private string _hitVfxPrefab;
+    [SerializeField] private string OnHitSount = "Shmak";
     public void FixedUpdate()
     {
       RaycastHit hit;
@@ -22,7 +25,7 @@ namespace Core.UnityComponents.MonoLinks.PhysicsLinks
           Collision = hit.collider,
           Sender = gameObject
         };
-
+        AllServices.Container.Single<IAudioService>().GetSoundSystem().PlayEffectClip(OnHitSount, true);
         _entity.Get<SpawnVfx>() = new SpawnVfx()
         {
           PrefabPath = _hitVfxPrefab,

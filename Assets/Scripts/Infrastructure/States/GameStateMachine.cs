@@ -16,11 +16,12 @@ namespace Infrastructure.States
     private IExitableState _activeState;
 
     public GameStateMachine(SceneLoader sceneLoader, LoadingCurtain curtain, StaticData staticData,
+      SoundSystem soundSystem,
       AllServices services)
     {
       _states = new Dictionary<Type, IExitableState>
       {
-        [typeof(BootstrapState)] = new BootstrapState(this, sceneLoader,staticData, services),
+        [typeof(BootstrapState)] = new BootstrapState(this, sceneLoader,staticData,soundSystem, services),
         [typeof(LoadLevelState)] = new LoadLevelState(this, sceneLoader, curtain, 
           services.Single<IGameFactory>(), 
           services.Single<IPersistentProgressService>(),

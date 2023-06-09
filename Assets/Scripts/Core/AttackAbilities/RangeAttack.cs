@@ -3,6 +3,8 @@ using Core.Components.Battle;
 using Core.Components.Common;
 using Core.Components.Events;
 using Core.UnityComponents.MonoLinks.Base;
+using Infrastructure.Services;
+using Infrastructure.Services.AudioService;
 using Leopotam.Ecs;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -32,6 +34,7 @@ namespace Core.AttackAbilities
       transform.LookAt(lookAt);
       _view.EnemyAnimator.PlayAttack();
       yield return new WaitForSeconds(AttackPrepareTime);
+      AllServices.Container.Single<IAudioService>().GetSoundSystem().PlayEffectClip("Attack", true);
       world.NewEntity().Get<SpawnPrefab>() = new SpawnPrefab()
       {
         PrefabPath = _projectilePrefabPath,

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -6406991206274749008}
   - component: {fileID: 753710578822434137}
   - component: {fileID: -8308922904181389001}
+  - component: {fileID: -2044515263508674845}
   m_Layer: 0
   m_Name: SD_Prop_Stool_01
   m_TagString: Untagged
@@ -132,3 +133,16 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0.51000005, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &-2044515263508674845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2111f9c85dd65ec44aeeaa5cd5fbb4e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundName: Hit3

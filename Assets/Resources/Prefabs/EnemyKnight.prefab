@@ -829,11 +829,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3138969289114593284}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8005008, y: 0.08959353, z: 0.24736533}
-  m_Center: {x: -0.4844339, y: -0.002410849, z: -0.009444604}
+  m_Size: {x: 0.92652035, y: 0.38077962, z: 0.24736533}
+  m_Center: {x: -0.5474532, y: 0.006200195, z: -0.009444622}
 --- !u!114 &6017255514975946761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1451,6 +1451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be482b6acd35431caf2c225ee7902d0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackPrepareTime: 0.4
+  AttackTime: 1.6
   _entity: {fileID: 4739028351922008878}
   _navMesh: {fileID: 4739028351922008877}
   _weaponCollision: {fileID: 3138969289114593284}
@@ -1484,9 +1486,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ragdollPrefab: Prefabs/KnightRagdoll
   _ragdollSpawnPosition: {fileID: 4739028351922008875}
-  _hitLayerMask:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!1 &5107684735747312322
 GameObject:
   m_ObjectHideFlags: 0

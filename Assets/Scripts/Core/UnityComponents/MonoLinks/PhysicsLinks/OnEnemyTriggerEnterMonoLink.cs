@@ -12,7 +12,7 @@ namespace Core.UnityComponents.MonoLinks.PhysicsLinks
     public void OnTriggerEnter(Collider other)
     {
       var entity = other.GetComponent<MonoEntity>();
-      if(entity == null ||!entity.Entity.Has<PlayerTag>())return;
+      if(entity == null ||!entity.Entity.IsAlive() || !entity.Entity.Has<PlayerTag>())return;
       _entity.Get<OnEnemyTriggerEnter>() = new OnEnemyTriggerEnter
       {
         Other = entity
