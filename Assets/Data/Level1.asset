@@ -26,7 +26,7 @@ MonoBehaviour:
       Data: 0|Data.LevelObject[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 37
+      Data: 17
     - Name: 
       Entry: 7
       Data: Data.LevelObject, Assembly-CSharp
@@ -35,13 +35,139 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 2.5
+      Data: 30.81
     - Name: 
       Entry: 4
       Data: 0
     - Name: 
       Entry: 4
-      Data: 17.5
+      Data: 28.53
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Rotation
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5665267
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.8240434
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: PrefabPath
+      Entry: 1
+      Data: Enviroment/Prefabs/Props/SD_Prop_Crate_01
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: Data.LevelObject, Assembly-CSharp
+    - Name: Position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 30.81
+    - Name: 
+      Entry: 4
+      Data: 1.13
+    - Name: 
+      Entry: 4
+      Data: 29.1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Rotation
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5665267
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.8240434
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: PrefabPath
+      Entry: 1
+      Data: Enviroment/Prefabs/Props/SD_Prop_Crate_01
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: Data.LevelObject, Assembly-CSharp
+    - Name: Position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 30.81
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 29.74
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Rotation
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5665267
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.8240434
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: PrefabPath
+      Entry: 1
+      Data: Enviroment/Prefabs/Props/SD_Prop_Crate_01
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: Data.LevelObject, Assembly-CSharp
+    - Name: Position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 16.43
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -2.1
     - Name: 
       Entry: 8
       Data: 
@@ -65,7 +191,7 @@ MonoBehaviour:
       Data: 
     - Name: PrefabPath
       Entry: 1
-      Data: Enviroment/Prefabs/Environment/SD_Env_Pillar_Stone_01
+      Data: Enviroment/Prefabs/Props/SD_Prop_Bed_02
     - Name: 
       Entry: 8
       Data: 
@@ -77,13 +203,13 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 2.5
+      Data: 33.89
     - Name: 
       Entry: 4
       Data: 0
     - Name: 
       Entry: 4
-      Data: 7.5
+      Data: -2.11
     - Name: 
       Entry: 8
       Data: 
@@ -107,7 +233,7 @@ MonoBehaviour:
       Data: 
     - Name: PrefabPath
       Entry: 1
-      Data: Enviroment/Prefabs/Environment/SD_Env_Pillar_Stone_01
+      Data: Enviroment/Prefabs/Props/SD_Prop_Bed_03
     - Name: 
       Entry: 8
       Data: 
@@ -119,181 +245,13 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 12.5
+      Data: 23.33
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: 
       Entry: 4
-      Data: 7.5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Environment/SD_Env_Pillar_Stone_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 12.5
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 17.5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Environment/SD_Env_Pillar_Stone_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: -5
-    - Name: 
-      Entry: 4
-      Data: 3
-    - Name: 
-      Entry: 4
-      Data: 17.5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Banner_Emblem_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: -5
-    - Name: 
-      Entry: 4
-      Data: 3
-    - Name: 
-      Entry: 4
-      Data: 7.5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Banner_Emblem_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 20
-    - Name: 
-      Entry: 4
-      Data: 3
-    - Name: 
-      Entry: 4
-      Data: 17.5
+      Data: -3.42
     - Name: 
       Entry: 8
       Data: 
@@ -317,7 +275,7 @@ MonoBehaviour:
       Data: 
     - Name: PrefabPath
       Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Banner_Emblem_01
+      Data: Enviroment/Prefabs/Props/SD_Prop_Barrel_02
     - Name: 
       Entry: 8
       Data: 
@@ -329,769 +287,13 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 20
+      Data: 25.3
     - Name: 
       Entry: 4
-      Data: 3
+      Data: 0.05
     - Name: 
       Entry: 4
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -0.7071068
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Banner_Emblem_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: -3.39999962
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 18.6900024
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Barrel_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: -3.20000076
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 16.8099976
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Barrel_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 15.0099983
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 18.36
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Barrel_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 15.59
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 17.0100021
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Barrel_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 14.18
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 17.11
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Barrel_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 2.43999863
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 9.540001
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Barrel_Broken_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: -3.65999985
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -2.69000244
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Bed_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 18.98
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -2.199997
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Bed_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 18.7599983
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 27.3729477
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -0.7071068
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Bed_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: -3.67
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 27.41
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -0.7071068
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Bed_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 5.88999939
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 12.5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Bench_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 8.07
-    - Name: 
-      Entry: 4
-      Data: 1.151001
-    - Name: 
-      Entry: 4
-      Data: 5.119999
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Crate_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 12.5
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 15
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Crate_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 15
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 15
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Crate_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 15
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 12.5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Crate_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 8.75
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 5.22999954
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Crate_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 7.5
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071068
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.7071067
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Crate_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 7.5
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -2.5
+      Data: 16.45
     - Name: 
       Entry: 8
       Data: 
@@ -1127,97 +329,13 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 9.279999
+      Data: 34.49
     - Name: 
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: 
       Entry: 4
-      Data: 13.4700012
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -4.371139E-08
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Stool_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 9.360001
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 11.73
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.97618854
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -0.216924042
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Stool_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 7.5
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 12.5
+      Data: 23.03
     - Name: 
       Entry: 8
       Data: 
@@ -1241,7 +359,7 @@ MonoBehaviour:
       Data: 
     - Name: PrefabPath
       Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Table_03
+      Data: Enviroment/Prefabs/Props/SD_Prop_Shelf_03
     - Name: 
       Entry: 8
       Data: 
@@ -1253,181 +371,13 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 7.970001
+      Data: 20.34
     - Name: 
       Entry: 4
-      Data: 1.65000153
+      Data: 1.74
     - Name: 
       Entry: 4
-      Data: 12.73
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -4.371139E-08
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Treasure_Goblet_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 7.130001
-    - Name: 
-      Entry: 4
-      Data: 1.65000153
-    - Name: 
-      Entry: 4
-      Data: 13.16
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -4.371139E-08
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Treasure_Goblet_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 7.38999939
-    - Name: 
-      Entry: 4
-      Data: 1.65000153
-    - Name: 
-      Entry: 4
-      Data: 11
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 0.9476893
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -0.319194317
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Treasure_Goblet_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 6.795002
-    - Name: 
-      Entry: 4
-      Data: 2.045002
-    - Name: 
-      Entry: 4
-      Data: 12.0589981
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: Rotation
-      Entry: 7
-      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: -4.371139E-08
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: PrefabPath
-      Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Vase_01
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: Data.LevelObject, Assembly-CSharp
-    - Name: Position
-      Entry: 7
-      Data: UnityEngine.Vector3, UnityEngine.CoreModule
-    - Name: 
-      Entry: 4
-      Data: -4.619999
-    - Name: 
-      Entry: 4
-      Data: 0
-    - Name: 
-      Entry: 4
-      Data: 12.5
+      Data: 22.25
     - Name: 
       Entry: 8
       Data: 
@@ -1451,7 +401,7 @@ MonoBehaviour:
       Data: 
     - Name: PrefabPath
       Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_WeaponRack_02
+      Data: Enviroment/Prefabs/Props/SD_Prop_Sword_Rusty_01
     - Name: 
       Entry: 8
       Data: 
@@ -1463,13 +413,13 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 7.43700027
+      Data: 20.17
     - Name: 
       Entry: 4
-      Data: 1.47600174
+      Data: 0.05
     - Name: 
       Entry: 4
-      Data: -1.9280014
+      Data: 23.63
     - Name: 
       Entry: 8
       Data: 
@@ -1478,16 +428,58 @@ MonoBehaviour:
       Data: UnityEngine.Quaternion, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 3.0908577E-08
+      Data: 0
     - Name: 
       Entry: 4
-      Data: 0.707107842
+      Data: 0.7071068
     - Name: 
       Entry: 4
-      Data: -0.707105756
+      Data: 0
     - Name: 
       Entry: 4
-      Data: -3.090867E-08
+      Data: 0.7071067
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: PrefabPath
+      Entry: 1
+      Data: Enviroment/Prefabs/Props/SD_Prop_Table_03
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: Data.LevelObject, Assembly-CSharp
+    - Name: Position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 19.71
+    - Name: 
+      Entry: 4
+      Data: 1.84
+    - Name: 
+      Entry: 4
+      Data: 23.41
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Rotation
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: -0.5
+    - Name: 
+      Entry: 4
+      Data: 0.5
     - Name: 
       Entry: 8
       Data: 
@@ -1505,13 +497,13 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 8.420002
+      Data: 19.4
     - Name: 
       Entry: 4
-      Data: 1.31999969
+      Data: 1.81
     - Name: 
       Entry: 4
-      Data: -1.83122253
+      Data: 24.82
     - Name: 
       Entry: 8
       Data: 
@@ -1520,16 +512,16 @@ MonoBehaviour:
       Data: UnityEngine.Quaternion, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 3.0908577E-08
+      Data: 0.5
     - Name: 
       Entry: 4
-      Data: 0.707107842
+      Data: 0.5
     - Name: 
       Entry: 4
-      Data: -0.707105756
+      Data: -0.5
     - Name: 
       Entry: 4
-      Data: -3.090867E-08
+      Data: 0.5
     - Name: 
       Entry: 8
       Data: 
@@ -1547,13 +539,13 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 6.2820015
+      Data: 19.39
     - Name: 
       Entry: 4
-      Data: 1.382
+      Data: 1.68
     - Name: 
       Entry: 4
-      Data: -1.78223419
+      Data: 24.15
     - Name: 
       Entry: 8
       Data: 
@@ -1562,22 +554,190 @@ MonoBehaviour:
       Data: UnityEngine.Quaternion, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 3.0908577E-08
+      Data: 0.5
     - Name: 
       Entry: 4
-      Data: 0.707107842
+      Data: 0.5
     - Name: 
       Entry: 4
-      Data: -0.707105756
+      Data: -0.5
     - Name: 
       Entry: 4
-      Data: -3.090867E-08
+      Data: 0.5
     - Name: 
       Entry: 8
       Data: 
     - Name: PrefabPath
       Entry: 1
-      Data: Enviroment/Prefabs/Props/SD_Prop_Tool_Plier_01
+      Data: Enviroment/Prefabs/Props/SD_Prop_Tool_Plier_02
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: Data.LevelObject, Assembly-CSharp
+    - Name: Position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 19.28
+    - Name: 
+      Entry: 4
+      Data: 1.68
+    - Name: 
+      Entry: 4
+      Data: 22.91
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Rotation
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: -0.5
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: PrefabPath
+      Entry: 1
+      Data: Enviroment/Prefabs/Props/SD_Prop_Tool_Plier_03
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: Data.LevelObject, Assembly-CSharp
+    - Name: Position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 34.49
+    - Name: 
+      Entry: 4
+      Data: 0.05
+    - Name: 
+      Entry: 4
+      Data: 15.16
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Rotation
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.7071068
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: -0.7071068
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: PrefabPath
+      Entry: 1
+      Data: Enviroment/Prefabs/Props/SD_Prop_WeaponRack_02
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: Data.LevelObject, Assembly-CSharp
+    - Name: Position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 17.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 17.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Rotation
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: PrefabPath
+      Entry: 1
+      Data: Enviroment/Prefabs/Props/SD_Prop_Cage_01
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: Data.LevelObject, Assembly-CSharp
+    - Name: Position
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 32.5
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 7.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Rotation
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: PrefabPath
+      Entry: 1
+      Data: Enviroment/Prefabs/Props/SD_Prop_Cage_01
     - Name: 
       Entry: 8
       Data: 
@@ -1601,19 +761,37 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 7.5
+      Data: 20
     - Name: 
       Entry: 4
       Data: 0
     - Name: 
       Entry: 4
-      Data: 20
+      Data: 30
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Rotation
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.9914448
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.130526245
     - Name: 
       Entry: 8
       Data: 
     - Name: EnemyId
       Entry: 1
-      Data: Wizard
+      Data: Spearman
     - Name: 
       Entry: 8
       Data: 
@@ -1625,19 +803,37 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 12
+      Data: 30
     - Name: 
       Entry: 4
       Data: 0
     - Name: 
       Entry: 4
-      Data: 12
+      Data: 30
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: Rotation
+      Entry: 7
+      Data: UnityEngine.Quaternion, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.1305262
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.9914449
     - Name: 
       Entry: 8
       Data: 
     - Name: EnemyId
       Entry: 1
-      Data: Knight
+      Data: Spearman
     - Name: 
       Entry: 8
       Data: 
@@ -1655,13 +851,13 @@ MonoBehaviour:
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
     - Name: 
       Entry: 4
-      Data: 7.56
+      Data: 25
     - Name: 
       Entry: 4
       Data: 0.46
     - Name: 
       Entry: 4
-      Data: 28.76
+      Data: 43
     - Name: 
       Entry: 8
       Data: 
@@ -1693,7 +889,7 @@ MonoBehaviour:
   NextLevelName: Level2
   PlayerPrefabPath: Prefabs/Player
   StartPosition:
-    X: -1.91
+    X: 18.42
     Y: 0
-    Z: -1.17
+    Z: -0.62
   EnvironmentTrack: Music1

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Core.UnityComponents.MonoLinks.PhysicsLinks;
 using Data;
 using Infrastructure.AssetManagement;
 using Sirenix.OdinInspector;
@@ -22,6 +23,8 @@ namespace LevelEditor
     [TableList(ShowPaging = true, DrawScrollView = true)]
     public List<EditorPrefab> Prefabs = new List<EditorPrefab>();
 
+    public LevelMapGenerator LevelMapGenerator;
+
     public bool SetDynamicObjects;
     
     private List<GameObject> _spawnedObjects = new List<GameObject>();
@@ -33,11 +36,13 @@ namespace LevelEditor
     public void LoadAssets()
     {
       Prefabs = new List<EditorPrefab>();
+      int i = 0;
       foreach (var asset in AssetDatabase.FindAssets("t:GameObject", new []{_assetPath[_pathNumber]}))
       {
         var path = AssetDatabase.GUIDToAssetPath(asset);
         var obj = (GameObject)AssetDatabase.LoadMainAssetAtPath(path);
-        Prefabs.Add(new EditorPrefab(obj,path, InstantiatePrefab,SelectEditorPrefab));
+        Prefabs.Add(new EditorPrefab(i,obj,path,InstantiatePrefab,SelectEditorPrefab,ReplaceSelected));
+        i++;
       }
     }
 
@@ -74,6 +79,15 @@ namespace LevelEditor
         spawnPoints.Add(enemyObject);
       }
       _levelData.EnemyObjects = spawnPoints.ToArray();
+
+      var nextLevel = GameObject.FindObjectOfType<NextLevelTriggerEnterMonoLink>();
+
+      _levelData.LevelEnterObject = new LevelObject()
+      {
+        Position = nextLevel.transform.position,
+        Rotation = nextLevel.transform.rotation,
+        PrefabPath = "Enviroment/Prefabs/NextLevelTrigger"
+      };
       
       EditorUtility.SetDirty(_levelData);
       
@@ -138,6 +152,12 @@ namespace LevelEditor
       _enemySpawnPoints.Add(spawnPoint);
     }
 
+    [Button, FoldoutGroup("Tools")]
+    public void SpawnMapForGenerator()
+    {
+      LevelMapGenerator.SpawnMap(InstantiatePrefab, Prefabs, transform);
+    }
+
     private void SelectEditorPrefab(EditorPrefab prefab)
     {
       _selectedPrefab = prefab;
@@ -151,6 +171,23 @@ namespace LevelEditor
       if (!SetDynamicObjects) return;
       _spawnedObjects.Add(go);
       _pathDictionary.Add(go, path);
+    }
+
+    private void ReplaceSelected(GameObject prefab, string path)
+    {
+      var oldGo = Selection.activeTransform.gameObject;
+      var rootGameObject = GameObject.Find(SetDynamicObjects?"DynamicObjects":"LevelRoot");
+      var go = Instantiate(prefab,oldGo.transform.position,oldGo.transform.rotation,  rootGameObject.transform);
+      if (!SetDynamicObjects)
+      {
+        DestroyImmediate(oldGo);
+        return;
+      }
+      _spawnedObjects.Add(go);
+      _pathDictionary.Add(go, path);
+      _spawnedObjects.Remove(oldGo);
+      _pathDictionary.Remove(oldGo);
+      DestroyImmediate(oldGo);
     }
 
     private string GetGameObjectPath(GameObject go)
@@ -222,7 +259,6 @@ namespace LevelEditor
       _editor.InstantiatePrefab(_selectedPrefab.Prefab, _selectedPrefab.Path);
     }
 
-
     #endregion 
 
 
@@ -237,19 +273,23 @@ namespace LevelEditor
   [Serializable]
   public class EditorPrefab
   {
+    public int Id;
     [HideInInspector]public GameObject Prefab;
     [TableColumnWidth(100)]
     [PreviewField(100,Alignment = ObjectFieldAlignment.Center)]
     public Texture Icon;
-    public Action<GameObject, string> ButtonCreateAction;
-    public Action<EditorPrefab> ButtonSelectAction;
+    private readonly Action<GameObject, string> _buttonCreateAction;
+    private readonly Action<EditorPrefab> _buttonSelectAction;
+    private readonly Action<GameObject, string> _buttonReplaceAction;
     [HideInInspector] public string Path;
 
-    public EditorPrefab(GameObject prefab,string path, Action<GameObject, string> createAction, Action<EditorPrefab> buttonSelectAction)
+    public EditorPrefab(int id, GameObject prefab,string path, Action<GameObject, string> createAction, Action<EditorPrefab> buttonSelectAction, Action<GameObject, string> replaceAction)
     {
+      Id = id;
       Prefab = prefab;
-      ButtonCreateAction = createAction;
-      ButtonSelectAction = buttonSelectAction;
+      _buttonCreateAction = createAction;
+      _buttonSelectAction = buttonSelectAction;
+      _buttonReplaceAction = replaceAction;
       Path = path.Replace(".prefab", "").Replace("Assets/Resources/", "");
     }
 
@@ -264,14 +304,21 @@ namespace LevelEditor
     [Button("Create")]
     public void Create()
     {
-      ButtonCreateAction?.Invoke(Prefab, Path);
+      _buttonCreateAction?.Invoke(Prefab, Path);
     }
   
     [TableColumnWidth(100)]
     [Button("Select")]
     public void Select()
     {
-      ButtonSelectAction?.Invoke(this);
+      _buttonSelectAction?.Invoke(this);
+    }
+    
+    [TableColumnWidth(100)]
+    [Button("Replace")]
+    public void Replace()
+    {
+      _buttonReplaceAction?.Invoke(Prefab, Path);
     }
   }
 }

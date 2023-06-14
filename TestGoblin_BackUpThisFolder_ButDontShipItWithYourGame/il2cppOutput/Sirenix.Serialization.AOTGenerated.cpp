@@ -879,20 +879,24 @@ struct EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284
 {
 	// UnityEngine.Vector3 Data.EnemyObject::Position
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_0;
+	// UnityEngine.Quaternion Data.EnemyObject::Rotation
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_1;
 	// System.String Data.EnemyObject::EnemyId
-	String_t* ___EnemyId_1;
+	String_t* ___EnemyId_2;
 };
 // Native definition for P/Invoke marshalling of Data.EnemyObject
 struct EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284_marshaled_pinvoke
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_0;
-	char* ___EnemyId_1;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_1;
+	char* ___EnemyId_2;
 };
 // Native definition for COM marshalling of Data.EnemyObject
 struct EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284_marshaled_com
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_0;
-	Il2CppChar* ___EnemyId_1;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_1;
+	Il2CppChar* ___EnemyId_2;
 };
 
 // Data.LevelObject

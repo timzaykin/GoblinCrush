@@ -16,6 +16,10 @@ MonoBehaviour:
   Levels:
   - {fileID: 11400000, guid: c5edf1cff17dfd74cb97656c1ee9a37c, type: 2}
   - {fileID: 11400000, guid: ab9de62918b20314eb805a02a72aeb3c, type: 2}
+  - {fileID: 11400000, guid: 9f9070e366cc3c440b45af52b031812b, type: 2}
+  - {fileID: 11400000, guid: b4c6c3c6860e52b41840990365dadd3f, type: 2}
+  - {fileID: 11400000, guid: 2463987fe70c97a46abc439726ffb0a3, type: 2}
+  - {fileID: 11400000, guid: d276615d63bcd544cb86521f077b3f63, type: 2}
   Enemies:
   - {fileID: 11400000, guid: 546b70e54214d1a499e0bdfe1042a134, type: 2}
   - {fileID: 11400000, guid: 20615aa06be7ebf4e9c9586ed0689475, type: 2}

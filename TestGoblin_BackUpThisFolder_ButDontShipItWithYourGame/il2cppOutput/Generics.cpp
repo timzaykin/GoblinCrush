@@ -4778,20 +4778,24 @@ struct EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284
 {
 	// UnityEngine.Vector3 Data.EnemyObject::Position
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_0;
+	// UnityEngine.Quaternion Data.EnemyObject::Rotation
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_1;
 	// System.String Data.EnemyObject::EnemyId
-	String_t* ___EnemyId_1;
+	String_t* ___EnemyId_2;
 };
 // Native definition for P/Invoke marshalling of Data.EnemyObject
 struct EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284_marshaled_pinvoke
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_0;
-	char* ___EnemyId_1;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_1;
+	char* ___EnemyId_2;
 };
 // Native definition for COM marshalling of Data.EnemyObject
 struct EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284_marshaled_com
 {
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_0;
-	Il2CppChar* ___EnemyId_1;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_1;
+	Il2CppChar* ___EnemyId_2;
 };
 
 // System.Exception
@@ -8238,7 +8242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass11_0_U3CCreateCallb
 		EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284* L_7 = ___value0;
 		RuntimeObject* L_8 = V_0;
 		*(EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)L_7 = ((*(EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)((EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)(EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)UnBox(L_8, il2cpp_rgctx_data(method->klass->rgctx_data, 0)))));
-		Il2CppCodeGenWriteBarrier((void**)&(((EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)L_7)->___EnemyId_1), (void*)NULL);
+		Il2CppCodeGenWriteBarrier((void**)&(((EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)L_7)->___EnemyId_2), (void*)NULL);
 		return;
 	}
 }
@@ -8275,7 +8279,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__DisplayClass11_0_U3CCreateCallb
 		EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284* L_12 = ___value0;
 		RuntimeObject* L_13 = V_0;
 		*(EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)L_12 = ((*(EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)((EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)(EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)UnBox(L_13, il2cpp_rgctx_data(method->klass->rgctx_data, 0)))));
-		Il2CppCodeGenWriteBarrier((void**)&(((EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)L_12)->___EnemyId_1), (void*)NULL);
+		Il2CppCodeGenWriteBarrier((void**)&(((EnemyObject_tED05D4E33D53805942BB80E2035210AE4A4CE284*)L_12)->___EnemyId_2), (void*)NULL);
 		return;
 	}
 }

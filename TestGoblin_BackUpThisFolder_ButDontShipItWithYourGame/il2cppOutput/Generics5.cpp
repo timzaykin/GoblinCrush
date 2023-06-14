@@ -255,8 +255,12 @@ struct AutoResetHandler_t1081665ADB2469FFD48B5E80BEC1211C2F40BA7B;
 struct AutoResetHandler_tDF8A4DF7D4812F0D5F6AA975B04D076825D41B09;
 // Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Common.SpawnPrefab>
 struct AutoResetHandler_t3A5856B305CE81D7EBCEC3D040D28E30568DBDE2;
+// Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Common.SpawnVfx>
+struct AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2;
 // Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Objects.Moves.Velocity>
 struct AutoResetHandler_t14665C4862964A851684C832D80016221E5149CC;
+// Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Objects.Tags.VfxTag>
+struct AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840;
 // Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Objects.Tags.WeaponTag>
 struct AutoResetHandler_t543383D71A2B89AF76EDDC6AE6564C72C3180C47;
 // Sirenix.Serialization.BaseDictionaryKeyPathProvider`1<System.Object>
@@ -739,6 +743,7 @@ IL2CPP_EXTERN_C RuntimeClass* Projectile_t8261EDE597A7035E87A63437878FCD25422E8C
 IL2CPP_EXTERN_C RuntimeClass* RigidbodyLink_t59390331F9F4A27B87983AA0B108555C88012577_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SByte_tFEFFEF5D2FEBF5207950AE6FAC150FC53B668DB5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SpawnPrefab_t0CA20722968654BFB9BC568663C02A963F8CE24A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ThreadAbortException_tCA1833E5D49782387EDF3BDCBDB90597B273F3C4_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Type_t_il2cpp_TypeInfo_var;
@@ -747,6 +752,7 @@ IL2CPP_EXTERN_C RuntimeClass* UInt32_t1833D51FFA667B18A5AA4B8D34DE284F8495D29B_i
 IL2CPP_EXTERN_C RuntimeClass* UInt64_t8F12534CC8FC4B5860F2A2CD1EE79D322E7A41AF_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* UIntPtr_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Velocity_tB0D778DA06FA8E76A6E4EBBBB202CDEA48B429BF_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VisualElementUtils_t40D4F58B1AA48524658BD0DC09E4CCD7DAAF722C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WeaponTag_t1E01D7AD85AC119C82A7C4F6197849E24834BE14_il2cpp_TypeInfo_var;
@@ -2661,6 +2667,15 @@ struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3_StaticFields
 	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___negativeInfinityVector_8;
 };
 
+// Core.Components.Objects.Tags.VfxTag
+struct VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675 
+{
+	// System.Single Core.Components.Objects.Tags.VfxTag::MaxLiveTime
+	float ___MaxLiveTime_0;
+	// System.Single Core.Components.Objects.Tags.VfxTag::LiveTime
+	float ___LiveTime_1;
+};
+
 // System.Void
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
 {
@@ -3705,6 +3720,31 @@ struct SpawnPrefab_t0CA20722968654BFB9BC568663C02A963F8CE24A_marshaled_com
 	Il2CppMethodPointer ___OnComplete_4;
 };
 
+// Core.Components.Common.SpawnVfx
+struct SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05 
+{
+	// System.String Core.Components.Common.SpawnVfx::PrefabPath
+	String_t* ___PrefabPath_0;
+	// UnityEngine.Vector3 Core.Components.Common.SpawnVfx::Position
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_1;
+	// UnityEngine.Quaternion Core.Components.Common.SpawnVfx::Rotation
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_2;
+};
+// Native definition for P/Invoke marshalling of Core.Components.Common.SpawnVfx
+struct SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05_marshaled_pinvoke
+{
+	char* ___PrefabPath_0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_1;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_2;
+};
+// Native definition for COM marshalling of Core.Components.Common.SpawnVfx
+struct SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05_marshaled_com
+{
+	Il2CppChar* ___PrefabPath_0;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Position_1;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___Rotation_2;
+};
+
 // UnityEngine.UIElements.StyleLength
 struct StyleLength_tF02B24735FC88BE29BEB36F7A87709CA28AF72D8 
 {
@@ -4555,8 +4595,18 @@ struct AutoResetHandler_t3A5856B305CE81D7EBCEC3D040D28E30568DBDE2  : public Mult
 {
 };
 
+// Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Common.SpawnVfx>
+struct AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2  : public MulticastDelegate_t
+{
+};
+
 // Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Objects.Moves.Velocity>
 struct AutoResetHandler_t14665C4862964A851684C832D80016221E5149CC  : public MulticastDelegate_t
+{
+};
+
+// Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Objects.Tags.VfxTag>
+struct AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840  : public MulticastDelegate_t
 {
 };
 
@@ -26851,6 +26901,113 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoResetHandler_EndInvoke_m803A44FE03E2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+void AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_Multicast(AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2* __this, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05* ___component0, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2* currentDelegate = reinterpret_cast<AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___component0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_OpenInst(AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2* __this, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05* ___component0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___component0, method);
+}
+void AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_OpenStatic(AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2* __this, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05* ___component0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___component0, method);
+}
+void AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_OpenStaticInvoker(AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2* __this, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05* ___component0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05* >::Invoke(__this->___method_ptr_0, method, NULL, ___component0);
+}
+void AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_ClosedStaticInvoker(AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2* __this, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05* ___component0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< RuntimeObject*, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___component0);
+}
+// System.Void Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Common.SpawnVfx>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoResetHandler__ctor_mBD770DA128B3970A2E3CC36CAE281051F6993473_gshared (AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_OpenStatic;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		bool isOpen = parameterCount == 0;
+		if (isOpen)
+		{
+			__this->___invoke_impl_1 = (intptr_t)&AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_OpenInst;
+		}
+		else
+		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+		}
+	}
+	__this->___extra_arg_5 = (intptr_t)&AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_Multicast;
+}
+// System.Void Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Common.SpawnVfx>::Invoke(T&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoResetHandler_Invoke_mE7134E1B18765DCAFB5F6431C6C99AC53DA38838_gshared (AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2* __this, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05* ___component0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___component0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+// System.IAsyncResult Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Common.SpawnVfx>::BeginInvoke(T&,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AutoResetHandler_BeginInvoke_m0D8CF7B39FD6625690A4EB5B57D0B285A8CCA8D9_gshared (AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2* __this, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05* ___component0, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback1, RuntimeObject* ___object2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05_il2cpp_TypeInfo_var, &*___component0);
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
+}
+// System.Void Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Common.SpawnVfx>::EndInvoke(T&,System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoResetHandler_EndInvoke_mAA1594D38A053382E9D52E03C6A0D893263F3EE5_gshared (AutoResetHandler_t99B04FFEF924D6103C1AC96DFFEC54AA8AFE24D2* __this, SpawnVfx_t7FE9CBBC99092CFF83A3B8854D07FA68CC94DD05* ___component0, RuntimeObject* ___result1, const RuntimeMethod* method) 
+{
+	void* ___out_args[] = {
+	___component0,
+	};
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 void AutoResetHandler_Invoke_m928E331263D6AAD0C1985881B26ADF786B958DDA_Multicast(AutoResetHandler_t14665C4862964A851684C832D80016221E5149CC* __this, Velocity_tB0D778DA06FA8E76A6E4EBBBB202CDEA48B429BF* ___component0, const RuntimeMethod* method)
 {
 	il2cpp_array_size_t length = __this->___delegates_13->max_length;
@@ -26944,6 +27101,113 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AutoResetHandler_BeginInvoke_m
 }
 // System.Void Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Objects.Moves.Velocity>::EndInvoke(T&,System.IAsyncResult)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoResetHandler_EndInvoke_mE7EBF119BD002A2A4DACE43C93B035814A06F1BA_gshared (AutoResetHandler_t14665C4862964A851684C832D80016221E5149CC* __this, Velocity_tB0D778DA06FA8E76A6E4EBBBB202CDEA48B429BF* ___component0, RuntimeObject* ___result1, const RuntimeMethod* method) 
+{
+	void* ___out_args[] = {
+	___component0,
+	};
+	il2cpp_codegen_delegate_end_invoke((Il2CppAsyncResult*) ___result1, ___out_args);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+void AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_Multicast(AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840* __this, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675* ___component0, const RuntimeMethod* method)
+{
+	il2cpp_array_size_t length = __this->___delegates_13->max_length;
+	Delegate_t** delegatesToInvoke = reinterpret_cast<Delegate_t**>(__this->___delegates_13->GetAddressAtUnchecked(0));
+	for (il2cpp_array_size_t i = 0; i < length; i++)
+	{
+		AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840* currentDelegate = reinterpret_cast<AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840*>(delegatesToInvoke[i]);
+		typedef void (*FunctionPointerType) (RuntimeObject*, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675*, const RuntimeMethod*);
+		((FunctionPointerType)currentDelegate->___invoke_impl_1)((Il2CppObject*)currentDelegate->___method_code_6, ___component0, reinterpret_cast<RuntimeMethod*>(currentDelegate->___method_3));
+	}
+}
+void AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_OpenInst(AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840* __this, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675* ___component0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___component0, method);
+}
+void AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_OpenStatic(AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840* __this, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675* ___component0, const RuntimeMethod* method)
+{
+	typedef void (*FunctionPointerType) (VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___method_ptr_0)(___component0, method);
+}
+void AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_OpenStaticInvoker(AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840* __this, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675* ___component0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker1< VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675* >::Invoke(__this->___method_ptr_0, method, NULL, ___component0);
+}
+void AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_ClosedStaticInvoker(AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840* __this, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675* ___component0, const RuntimeMethod* method)
+{
+	InvokerActionInvoker2< RuntimeObject*, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675* >::Invoke(__this->___method_ptr_0, method, NULL, __this->___m_target_2, ___component0);
+}
+// System.Void Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Objects.Tags.VfxTag>::.ctor(System.Object,System.IntPtr)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoResetHandler__ctor_mCE5D31917668AABC7C56F95D38A53CE3D0122942_gshared (AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840* __this, RuntimeObject* ___object0, intptr_t ___method1, const RuntimeMethod* method) 
+{
+	__this->___method_ptr_0 = il2cpp_codegen_get_virtual_call_method_pointer((RuntimeMethod*)___method1);
+	__this->___method_3 = ___method1;
+	__this->___m_target_2 = ___object0;
+	Il2CppCodeGenWriteBarrier((void**)(&__this->___m_target_2), (void*)___object0);
+	int parameterCount = il2cpp_codegen_method_parameter_count((RuntimeMethod*)___method1);
+	__this->___method_code_6 = (intptr_t)__this;
+	if (MethodIsStatic((RuntimeMethod*)___method1))
+	{
+		bool isOpen = parameterCount == 1;
+		if (il2cpp_codegen_call_method_via_invoker((RuntimeMethod*)___method1))
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_OpenStaticInvoker;
+			else
+				__this->___invoke_impl_1 = (intptr_t)&AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_ClosedStaticInvoker;
+		else
+			if (isOpen)
+				__this->___invoke_impl_1 = (intptr_t)&AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_OpenStatic;
+			else
+				{
+					__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+					__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+				}
+	}
+	else
+	{
+		bool isOpen = parameterCount == 0;
+		if (isOpen)
+		{
+			__this->___invoke_impl_1 = (intptr_t)&AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_OpenInst;
+		}
+		else
+		{
+			if (___object0 == NULL)
+				il2cpp_codegen_raise_exception(il2cpp_codegen_get_argument_exception(NULL, "Delegate to an instance method cannot have null 'this'."), NULL);
+			__this->___invoke_impl_1 = (intptr_t)__this->___method_ptr_0;
+			__this->___method_code_6 = (intptr_t)__this->___m_target_2;
+		}
+	}
+	__this->___extra_arg_5 = (intptr_t)&AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_Multicast;
+}
+// System.Void Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Objects.Tags.VfxTag>::Invoke(T&)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoResetHandler_Invoke_mBEBBFD17B90E5E53150981C7839BD736A0C75BB6_gshared (AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840* __this, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675* ___component0, const RuntimeMethod* method) 
+{
+	typedef void (*FunctionPointerType) (RuntimeObject*, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675*, const RuntimeMethod*);
+	((FunctionPointerType)__this->___invoke_impl_1)((Il2CppObject*)__this->___method_code_6, ___component0, reinterpret_cast<RuntimeMethod*>(__this->___method_3));
+}
+// System.IAsyncResult Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Objects.Tags.VfxTag>::BeginInvoke(T&,System.AsyncCallback,System.Object)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AutoResetHandler_BeginInvoke_m09D3FC2B62D46E25200DC19736BB93849F796D46_gshared (AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840* __this, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675* ___component0, AsyncCallback_t7FEF460CBDCFB9C5FA2EF776984778B9A4145F4C* ___callback1, RuntimeObject* ___object2, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	void *__d_args[2] = {0};
+	__d_args[0] = Box(VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675_il2cpp_TypeInfo_var, &*___component0);
+	return (RuntimeObject*)il2cpp_codegen_delegate_begin_invoke((RuntimeDelegate*)__this, __d_args, (RuntimeDelegate*)___callback1, (RuntimeObject*)___object2);
+}
+// System.Void Leopotam.Ecs.EcsComponentPool`1/AutoResetHandler<Core.Components.Objects.Tags.VfxTag>::EndInvoke(T&,System.IAsyncResult)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AutoResetHandler_EndInvoke_m8BBE3C88EB5D5B80C32818826770077700B8363B_gshared (AutoResetHandler_t8004D5D555A8862D4211CC0CB2AE4E705A5E2840* __this, VfxTag_t413DC98A0FC780F5EBB174F1CDDE1CD1EF59E675* ___component0, RuntimeObject* ___result1, const RuntimeMethod* method) 
 {
 	void* ___out_args[] = {
 	___component0,

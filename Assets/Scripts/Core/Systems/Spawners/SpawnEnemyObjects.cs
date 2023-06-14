@@ -20,7 +20,7 @@ namespace Core.Systems.Spawners
         {
           PrefabPath = enemyData.PrefabPath,
           Position = enemyObject.Position,
-          Rotation = Quaternion.identity,
+          Rotation = enemyObject.Rotation,
           Parent = null
         };
       }
